@@ -11,10 +11,17 @@
 </head>
 <body>
     <div class="nav">
+        <div class="logo">
+            <img src="icons/Logo.svg">
+        </div>
          <div class="hud">
-            <a class="link">Главная</a>
-            <a class="link">Каталог</a>
-            <a class="link">Контакты</a>
+            <a href="#" class="link">Главная</a>
+            <a href="#" class="link">Каталог</a>
+            <a href="#" class="link">Контакты</a>
+         </div>
+         <div class="basket">
+            <img class = "moon-icon" src = "icons/moon.svg">
+            <a href="#" class="link link-basket">Корзина(0)</a>
          </div>
     </div>
 

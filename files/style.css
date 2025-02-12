@@ -25,10 +25,67 @@ body {
     width: 100%;
     height: 80px;
     background: #fff;
+    display: flex;
+    height: 80px;
+    align-items: center;
+    background-color: #ffffff;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-color: #dadada;
 }
 
 .hud {
+    
+    margin-left: auto;
+    margin-right: auto;
     width: 375px;
     height: 28px;
+    display: inline-flex;
+    align-items: center;
+    gap: 60px;
+    position: sticky;
+    flex: 0 0 auto;
+      
+}
 
+.link {
+	position: sticky;
+	color: black;
+	cursor: pointer;
+	line-height: 1; 
+	text-decoration: none; 
+
+}
+.link:after {
+	display: block;
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 2px; 
+	background-color: black; 
+	content: "";
+	transition: width 0.3s ease-out; 
+}
+
+.link:hover:after,
+.link:focus:after {
+	width: 100%; 
+    color: #000;
+}
+
+.basket {
+    width: 200px;
+    height: 28px;
+    align-items: center;
+    display: inline-flex;
+}
+
+.link-basket {
+    margin-left: auto;
+}
+
+.moon-icon {
+    width: 24px ;
+    height: 24px ;
+    background-attachment: fixed;
 }
