@@ -4,38 +4,82 @@
     box-sizing: border-box;
 }
 
+:root {
+    --font-family: "Inter", sans-serif;
+	--black: #0d0d0d;
+	--gray: #666;
+	--background: #f4f4f4;
+	--white: #fff;
+	--light-gray: #dbdbdb;
+}
+::selection {
+    background-color: #0d0d0d;
+    color: #fff;
+}
 
-.inter-hub {
-    font-family: "Inter", serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
+h1 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 117%;
+    color: var(--black);
+    margin-bottom: 40px;
+}
+
+p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    color: var(--gray);
+
+    grid-column: 7 / span 6;
+}
+
+.p-disc {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #666 0%, #ccc 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+span {
+    color: var(--gray);
 }
 
 body {
-    background-color: #f4f4f4;
-    font-family: "Inter", serif;
-    font-optical-sizing: auto;
+    background-color: var(--background);
+}
+
+.hud, .basket {
+    font-family: var(--font-family);
     font-weight: 500;
-    font-style: normal;
+    font-size: 20px;
+    line-height: 140%;
+    text-decoration: none;
+    text-decoration-skip-ink: none;
+    color: var(--black);
 }
 
 .nav {
+    position: fixed;
     padding: 20px 40px;
     width: 100%;
     height: 80px;
-    background: #fff;
     display: flex;
     height: 80px;
     align-items: center;
-    background-color: #ffffff;
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-    border-color: #dadada;
+    background: var(--white);
+    border-bottom: 2px solid var(--light-gray);
 }
 
 .hud {
-    
     margin-left: auto;
     margin-right: auto;
     width: 375px;
@@ -45,16 +89,14 @@ body {
     gap: 60px;
     position: sticky;
     flex: 0 0 auto;
-      
 }
 
 .link {
 	position: sticky;
-	color: black;
+	color: var(--black);
 	cursor: pointer;
 	line-height: 1; 
 	text-decoration: none; 
-
 }
 .link:after {
 	display: block;
@@ -62,15 +104,15 @@ body {
 	left: 0;
 	width: 0;
 	height: 2px; 
-	background-color: black; 
+	background-color: var(--black); 
 	content: "";
-	transition: width 0.3s ease-out; 
+	transition: width 200ms ease-out; 
 }
 
 .link:hover:after,
 .link:focus:after {
 	width: 100%; 
-    color: #000;
+    color: var(--black);
 }
 
 .basket {
@@ -88,4 +130,43 @@ body {
     width: 24px ;
     height: 24px ;
     background-attachment: fixed;
+}
+.container {
+    padding-top: 120px;
+    display: flex;
+    margin: auto;
+    width: 1360px;
+}
+
+.main-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1360px;
+    height: 340px;
+    margin-bottom: 40px;
+    background-image: url(media/main-photo.png);
+    background-position: center;
+}
+.p-disc-cont {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    grid-column: 1 / span 4;
+}
+.p-text {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12 равных колонок */
+    gap: 20px; /* Расстояние между колонками (по макету) */
+    align-items: end;
+}
+.main-photo1 {
+    position: relative;
+    top: 10%;
+    right: 38%;
+}
+.main-photo2 {
+    position: relative;
+    bottom: 10%;
+    left: 38%;
 }
