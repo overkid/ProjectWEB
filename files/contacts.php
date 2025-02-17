@@ -20,7 +20,7 @@
             <a href="contacts.php" class="link">Контакты</a>
          </div>
          <div class="basket">
-            <!-- <img class = "moon-icon" src = "icons/moon.svg"> -->
+          <!-- <img class = "moon-icon" src = "icons/moon.svg">  -->
             <a href="#" class="link link-basket">Корзина(0)</a>
          </div>
     </div>
