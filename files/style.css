@@ -18,6 +18,10 @@
     color: var(--white);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--background);
     font-family: var(--font-family);
@@ -84,7 +88,9 @@ span {
     align-items: center;
     background: var(--white);
     border-bottom: 2px solid var(--light-gray);
-    z-index: 10;
+    z-index: 100;
+
+    transition: transform 0.2s ease-in-out;
 }
 
 .hud, .basket {
@@ -138,7 +144,11 @@ span {
 }
 
 .content {
-    max-width: fit-content;
+    margin: auto;
+}
+
+.main {
+    max-width: 1360px;
     margin: auto;
 }
 
@@ -146,7 +156,7 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1360px;
+    width: 100%;
     height: 340px;
     margin-bottom: 40px;
     background: url(media/main-photo.png) center/cover no-repeat;
@@ -180,12 +190,11 @@ span {
     z-index: 1;
 }
 
-.content {
+#content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 120px;
-    max-width: 1360px;
     padding-top: 120px;
 }
 
@@ -194,6 +203,11 @@ span {
     border-bottom: 2px solid var(--light-gray);
     border-top: 2px solid var(--light-gray);
     padding: 40px 0px 40px 0px;
+}
+
+.gallery-content {
+    max-width: 1360px;
+    margin: auto;
 }
 
 .cards {
@@ -237,24 +251,26 @@ span {
     color: var(--white);
 }
 
+.features-content h2 {
+    max-width: 1360px;
+    margin: auto;
+}
+
 .features-lines {
     display: flex;
     flex-direction: column;
     border-top: 2px solid var(--light-gray);
+    margin-top: 40px;
 }
 
-.feature {
-    display: flex;
-    align-items: center;
-    border-bottom: 2px solid var(--light-gray);
-    padding: 26px 0px;
-    background-color: none;
+.feature-content {
+    max-width: 1360px;
+    margin: auto;
 
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
-
-    transition: 200ms;
+    align-items: center;
 }
 
 .feature img {
@@ -267,6 +283,12 @@ span {
 
 .feature p {
     grid-column: 7 / span 6;
+}
+
+.features-lines a {
+    padding: 26px 0px 26px 0px;
+    border-bottom: 2px solid var(--light-gray);
+    transition: 200ms;
 }
 
 .features-lines a:hover {
@@ -283,6 +305,8 @@ span {
 }
 
 .cta1 {
+    max-width: 1360px;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
@@ -297,6 +321,8 @@ span {
 }
 
 .cta2 {
+    max-width: 1360px;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
@@ -332,20 +358,13 @@ span {
     transition: 400ms;
 }
 
+
 footer {
     background-color: var(--black);
     padding: 120px 0px 40px 0px;
 }
 
-.footer1 h3 {
-    color: var(--white);
-    font-weight: 400;
-    text-decoration: underline;
-}
-
-.footer1 {
-    display: flex;
-    flex-direction: column;
-    max-width: 50%;
-    gap: 120px;
+.footer-content {
+    max-width: 1360px;
+    margin: auto;
 }
