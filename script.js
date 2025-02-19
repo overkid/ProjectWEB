@@ -76,3 +76,13 @@ document.addEventListener("DOMContentLoaded", () => {
   
     sections.forEach((section) => observer.observe(section));
   });
+
+  window.addEventListener("load", () => {
+    const preloader = document.getElementById("preloader");
+    setTimeout(() => {
+        preloader.classList.add("hidden");
+        setTimeout(() => {
+            preloader.style.display = "none"; // Удаляем из DOM после анимации
+        }, 1000);
+    }, 500); // Короткая задержка, чтобы не исчезало резко
+});
