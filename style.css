@@ -37,7 +37,11 @@
 }
 
 #preloader video {
-    width: 10%;
+    max-width: 40vw;
+    max-height: 40vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
 }
 
 html {
