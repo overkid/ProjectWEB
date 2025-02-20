@@ -44,6 +44,42 @@
     object-fit: contain;
 }
 
+@media (min-width: 1440px) {
+    .main-photo1 {
+        right: 38%;;
+    }
+}
+
+@media (min-width: 1440px) {
+    .main-photo2 {
+        left: 38%;;
+    }
+}
+
+@media (max-width: 1440px) {
+    .main-photo1 {
+        right: 32%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .main-photo1 {
+        right: 28%;
+    }
+}
+
+@media (max-width: 1440px) {
+    .main-photo2 {
+        left: 32%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .main-photo2 {
+        left: 28%;
+    }
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -174,8 +210,9 @@ span {
 }
 
 .main {
-    max-width: 1360px;
+    max-width: 1400px;
     margin: auto;
+    padding: 0px 20px 0px 20px;
 }
 
 .main-photo {
@@ -229,7 +266,6 @@ span {
 .main-photo1 {
     position: relative;
     top: 10%;
-    right: 38%;
     z-index: 1;
 
     animation: main-photos 800ms ease-out;
@@ -238,7 +274,6 @@ span {
 .main-photo2 {
     position: relative;
     bottom: 10%;
-    left: 38%;
     z-index: 1;
 
     animation: main-photos 800ms ease-out;
@@ -278,8 +313,9 @@ span {
 }
 
 .gallery-content {
-    max-width: 1360px;
+    max-width: 1400px;
     margin: auto;
+    padding: 0px 20px 0px 20px;
 }
 
 .cards {
@@ -293,6 +329,46 @@ span {
     width: 325px;
     height: 325px;
     padding: 12px;
+    background-size: 100%;
+    background-position: center;
+    transition: 400ms;
+    position: relative;
+}
+
+.card-button {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    width: 80px;
+    height: 80px;
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: 200ms;
+}
+
+.card:hover {
+    background-size: 110%;
+    transition: 400ms;
+}
+
+.card:hover .card-button {
+    transform: scale(1);
+    opacity: 1;
+    transition: 400ms;
+}
+
+.card:hover .card-disc {
+    filter: blur(2px);
+    transition: 400ms;
+}
+
+.card-button:hover {
+    background-color: var(--gray);
+    transition: 400ms;
 }
 
 .card:nth-child(1){
@@ -312,6 +388,8 @@ span {
     display: flex;
     gap: auto;
     justify-content: space-between;
+    backdrop-filter: blur(0px);
+    transition: 400ms;
 }
 .card-disc p {
     font-family: var(--font-family);
@@ -324,8 +402,9 @@ span {
 }
 
 .features-content h2 {
-    max-width: 1360px;
+    max-width: 1400px;
     margin: auto;
+    padding: 0px 20px 0px 20px;
 }
 
 .features-lines {
@@ -336,8 +415,9 @@ span {
 }
 
 .feature-content {
-    max-width: 1360px;
+    max-width: 1400px;
     margin: auto;
+    padding: 0px 20px 0px 20px;
 
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -377,8 +457,9 @@ span {
 }
 
 .cta1 {
-    max-width: 1360px;
+    max-width: 1400px;
     margin: auto;
+    padding: 0px 20px 0px 20px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
@@ -393,8 +474,9 @@ span {
 }
 
 .cta2 {
-    max-width: 1360px;
+    max-width: 1400px;
     margin: auto;
+    padding: 0px 20px 0px 20px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
@@ -427,6 +509,7 @@ span {
 
 .cta2 a:hover {
     padding-left: 52px;
+    background-color: var(--gray);
     transition: 400ms;
 }
 
@@ -437,6 +520,7 @@ footer {
 }
 
 .footer-content {
-    max-width: 1360px;
+    max-width: 1400px;
     margin: auto;
+    padding: 0px 20px 0px 20px;
 }

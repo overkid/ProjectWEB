@@ -16,9 +16,19 @@ window.addEventListener("scroll", () => {
 });
 
 window.addEventListener("scroll", () => {
-    let scrollTop = window.scrollY;
-    document.querySelector(".main-photo1").style.transform = `translateY(${scrollTop * -0.2}px)`;
-    document.querySelector(".main-photo2").style.transform = `translateY(${scrollTop * -0.4}px)`;
+  let scrollTop = window.scrollY;
+
+  let photo1 = document.querySelector(".main-photo1");
+  let photo2 = document.querySelector(".main-photo2");
+
+  // Параллакс-движение вверх
+  photo1.style.transform = `translateY(${scrollTop * -0.2}px)`;
+  photo2.style.transform = `translateY(${scrollTop * -0.4}px)`;
+
+  // Блюр, зависящий от скролла (от 0px до 10px)
+  let blurValue = Math.min(scrollTop / 100, 5); 
+  photo1.style.filter = `blur(${blurValue}px)`;
+  photo2.style.filter = `blur(${blurValue}px)`;
 });
 
 
