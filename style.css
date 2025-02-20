@@ -366,8 +366,13 @@ span {
     transition: 400ms;
 }
 
-.card-button:hover {
-    background-color: var(--gray);
+.card-button:hover img {
+    transform: rotate(-45deg);
+    transition: 400ms;
+}
+
+.card-button img {
+    transform: rotate(0deg);
     transition: 400ms;
 }
 
@@ -496,7 +501,7 @@ span {
     padding: 32px 40px;
     text-decoration: none;
 
-    transition: 200ms;
+    transition: 400ms;
 }
 
 .cta2 a h3 {
@@ -509,7 +514,16 @@ span {
 
 .cta2 a:hover {
     padding-left: 52px;
-    background-color: var(--gray);
+    transition: 400ms;
+}
+
+.cta2 a:hover img {
+    transform: rotate(-45deg);
+    transition: 400ms;
+}
+
+.cta2 img {
+    transform: rotate(0deg);
     transition: 400ms;
 }
 
