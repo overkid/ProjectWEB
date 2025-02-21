@@ -96,3 +96,17 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 1000);
     }, 500); // Короткая задержка, чтобы не исчезало резко
 });
+
+
+
+function adjustZoom() {
+  const baseWidth = 1920; // Базовая ширина дизайна
+  const screenWidth = window.innerWidth; // Текущая ширина экрана
+  const zoomLevel = screenWidth / baseWidth; // Вычисляем коэффициент масштаба
+
+  document.body.style.zoom = zoomLevel; // Применяем масштаб ко всему body
+}
+
+// Вызываем функцию при загрузке страницы и при изменении размера окна
+window.addEventListener('resize', adjustZoom);
+adjustZoom();

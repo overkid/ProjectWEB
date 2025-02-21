@@ -87,6 +87,7 @@ html {
 body {
     background-color: var(--background);
     font-family: var(--font-family);
+    overflow-x: hidden;
 }
 
 h1, p, .hud, .basket {
@@ -206,6 +207,7 @@ span {
 }
 
 .content {
+    width: 100%;
     margin: auto;
 }
 
