@@ -153,8 +153,12 @@ span {
     background: var(--white);
     border-bottom: 2px solid var(--light-gray);
     z-index: 100;
+    transition: background 200ms, border-bottom 200ms, transform 200ms;
+}
 
-    transition: transform 0.2s ease-in-out;
+.nav.scrolled {
+    background: transparent;
+    border-bottom: 2px solid transparent;
 }
 
 .hud, .basket {
@@ -172,6 +176,8 @@ span {
     gap: 60px;
     position: sticky;
     flex-shrink: 0;
+
+    transition: opacity 0.3s ease-in-out;
 }
 
 .basket {

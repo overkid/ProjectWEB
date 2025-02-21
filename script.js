@@ -1,19 +1,22 @@
 let lastScrollTop = 0;
 const nav = document.querySelector(".nav");
+const hud = document.querySelector(".hud");
 
 window.addEventListener("scroll", () => {
     let scrollTop = window.scrollY || document.documentElement.scrollTop;
-    
+
     if (scrollTop > lastScrollTop) {
-        // Скроллим вниз — скрываем nav
-        nav.style.transform = "translateY(-100%)";
+        hud.style.opacity = "0";
+        nav.classList.add("scrolled");
     } else {
-        // Скроллим вверх — показываем nav
-        nav.style.transform = "translateY(0)";
+        hud.style.opacity = "1";
+        nav.classList.remove("scrolled");
     }
 
     lastScrollTop = scrollTop;
 });
+
+
 
 window.addEventListener("scroll", () => {
   let scrollTop = window.scrollY;
@@ -110,3 +113,17 @@ function adjustZoom() {
 // Вызываем функцию при загрузке страницы и при изменении размера окна
 window.addEventListener('resize', adjustZoom);
 adjustZoom();
+
+
+const logo = document.querySelector(".logo img");
+const logos = ["icons/Logo2.svg", "icons/Logo3.svg"];
+let currentIndex = 0; // Индекс для чередования
+
+logo.addEventListener("mouseenter", () => {
+    logo.src = logos[currentIndex]; // Устанавливаем следующий логотип
+    currentIndex = (currentIndex + 1) % logos.length; // Переключаем индекс (0 → 1 → 0)
+});
+
+logo.addEventListener("mouseleave", () => {
+    logo.src = "icons/Logo.svg"; // Возвращаем стандартный логотип
+});
