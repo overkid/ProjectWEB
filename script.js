@@ -127,3 +127,11 @@ logo.addEventListener("mouseenter", () => {
 logo.addEventListener("mouseleave", () => {
     logo.src = "icons/Logo.svg"; // Возвращаем стандартный логотип
 });
+
+
+window.addEventListener("scroll", () => {
+  let scrollTop = window.scrollY;
+  let translateY = scrollTop * -0.1; // Двигаем вверх, но мягко
+
+  document.querySelector(".main-photo").style.backgroundPosition = `center calc(50% + ${translateY}px)`;
+});
