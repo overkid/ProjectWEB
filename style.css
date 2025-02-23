@@ -131,7 +131,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 120px;
-    padding-bottom: 120px;
+    padding-bottom: 40px;
 }
 
 .p-disc {
@@ -565,4 +565,20 @@ footer {
     max-width: 1400px;
     margin: auto;
     padding: 0px 20px 0px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.footer-content a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 400;
+    transition: 400ms;
+}
+
+.footer-content a:hover {
+    color: var(--gray);
+    transition: 400ms;
 }
