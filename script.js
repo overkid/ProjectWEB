@@ -35,60 +35,34 @@ window.addEventListener("scroll", () => {
 });
 
 
-
 document.addEventListener("DOMContentLoaded", () => {
-    const sections = document.querySelectorAll(".gallery-content");
-  
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            gsap.to(entry.target, { opacity: 1, y: 0, duration: 0.4 });
-            observer.unobserve(entry.target); // Чтобы не повторялось
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
-  
-    sections.forEach((section) => observer.observe(section));
+  const elements = document.querySelectorAll("h2, .cards, .p-text, .features-content, .cta1, .cta2");
+
+  elements.forEach((el) => {
+      gsap.set(el, { opacity: 0, y: 20 });
   });
 
-  document.addEventListener("DOMContentLoaded", () => {
-    const sections = document.querySelectorAll(".features-content");
-  
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            gsap.to(entry.target, { opacity: 1, y: 0, duration: 0.4 });
-            observer.unobserve(entry.target); // Чтобы не повторялось
-          }
-        });
+  const observer = new IntersectionObserver(
+      (entries, obs) => {
+          entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                  gsap.to(entry.target, { 
+                      opacity: 1, 
+                      y: 0, 
+                      duration: 0.4, 
+                      ease: "power1.out"
+                  });
+                  obs.unobserve(entry.target);
+              }
+          });
       },
-      { threshold: 0.5 }
-    );
-  
-    sections.forEach((section) => observer.observe(section));
-  });
+      { threshold: 0.4 }
+  );
 
-  document.addEventListener("DOMContentLoaded", () => {
-    const sections = document.querySelectorAll(".cta1, .cta2");
-  
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            gsap.to(entry.target, { opacity: 1, y: 0, duration: 0.4 });
-            observer.unobserve(entry.target); // Чтобы не повторялось
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
-  
-    sections.forEach((section) => observer.observe(section));
-  });
+  elements.forEach((el) => observer.observe(el));
+});
+
+
 
   window.addEventListener("load", () => {
     const preloader = document.getElementById("preloader");
@@ -99,8 +73,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 1000);
     }, 500); // Короткая задержка, чтобы не исчезало резко
 });
-
-
 
 function adjustZoom() {
   const baseWidth = 1920; // Базовая ширина дизайна
