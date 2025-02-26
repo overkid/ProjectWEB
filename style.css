@@ -391,7 +391,24 @@ span {
 .card:nth-child(4){
     background-image: url(media/Product\ Card-3.png);
 }
-
+.card:nth-child(5){
+    background-image: url(media/Product\ Card-2.png);
+}
+.card:nth-child(6){
+    background-image: url(media/Product\ Card-3.png);
+}
+.card:nth-child(7){
+    background-image: url(media/Product\ Card.png);
+}
+.card:nth-child(8){
+    background-image: url(media/Product\ Card-1.png);
+}
+.card:nth-child(9){
+    background-image: url(media/Product\ Card-2.png);
+}
+.card:nth-child(10){
+    background-image: url(media/Product\ Card-3.png);
+}
 .card-disc {
     display: flex;
     gap: auto;
@@ -581,4 +598,28 @@ footer {
 .footer-content a:hover {
     color: var(--gray);
     transition: 400ms;
+}
+
+
+
+
+/* Каталог если че */
+
+.ctlg {
+    width: 100%;
+    padding: 120px 0px 0px 0px;
+
+
+}
+
+.cards-ctlg {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 320px);
+    width: 100%;
+    max-width: 1400px;
+    justify-content: center;
+    justify-items: center;
+    column-gap: 30px;
+    row-gap: 40px;
+    margin: 0 auto;
 }

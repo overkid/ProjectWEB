@@ -19,11 +19,23 @@
             <a href="main.php" class="link">Каталог</a>
             <a href="contacts.php" class="link">Контакты</a>
          </div>
+
          <div class="basket">
           <!-- <img class = "moon-icon" src = "icons/moon.svg">  -->
             <a href="#" class="link link-basket">Корзина(0)</a>
          </div>
     </div>
+    <footer>
+                <div class="footer-content">
+                    <img src="icons/bigLogo.svg">
+                    <p>Concept by <a href="#">Михаил</a>, <a href="#">Андрей</a>, <a href="#">Вячеслав</a></p>
+                </div>
+            </footer>
+            
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+
 
 </body>
 </html>
