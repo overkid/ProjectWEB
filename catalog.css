@@ -1,0 +1,51 @@
+.ctlg {
+    width: 100%;
+    padding: 120px 0px 0px 0px;
+
+
+}
+
+.cards-ctlg {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 320px);
+    width: 100%;
+    max-width: 1400px;
+    justify-content: center;
+    justify-items: center;
+    column-gap: 30px;
+    row-gap: 40px;
+    margin: 0 auto;
+}
+
+.price {
+    position:absolute;
+    bottom:0;
+    margin-bottom: 20px;
+    right: 0;
+    margin-right: 10px;
+}
+
+.price p { 
+    font-family: var(--font-family);
+    font-weight: 1400;
+    line-height: 100%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+
+.zzz {
+    margin-left: 270px;
+    font-family: var( --font-family);
+    font-weight: 1400;
+    font-size: 139px;
+    color: var(--black);
+}
+
+.zzz p {
+    font-family: var( --font-family);
+    font-weight: 1400;
+    font-size: 48px;
+    color: var(--black);
+}

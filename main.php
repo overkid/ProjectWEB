@@ -8,8 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="catalog.css">
 </head>
 <body>
+    
     <div class="nav">
         <div class="logo">
             <img src="icons/Logo.svg">
@@ -24,6 +26,131 @@
             <a href="#" class="link link-basket">Корзина(0)</a>
          </div>
     </div>
+    <main>
+
+    <section class="ctlg">
+                <div class="container-ctlg">
+                <div class="zzz">
+                            <p>Каталог.</p>
+                        </div>
+
+                    <div class="cards-ctlg">
+
+                        <div class="card">
+                            <div class="card-disc">
+                                <p>ö-15</p>
+                                <p>light</p>
+                            </div>
+                            <div class="price">
+                                <p>12 990 ₽</p>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <div class="card-disc">
+                                <p>ö-02</p>
+                                <p>dark</p>
+
+                            </div>
+                            <div class="price">
+                                <p>15 990 ₽</p>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <div class="card-disc">
+                                <p>ö-18</p>
+                                <p>light</p>
+                            </div>
+                            <div class="price">
+                                <p>13 490 ₽</p>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <div class="card-disc">
+                                <p>ö-04</p>
+                                <p>dark</p>
+                            </div>
+                            <div class="price">
+                                <p>15 990 ₽</p>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <div class="card-disc">
+                                <p>ö-15</p>
+                                <p>light</p>
+                            </div>
+                            <div class="price">
+                                <p>15 990 ₽</p>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <div class="card-disc">
+                                <p>ö-15</p>
+                                <p>light</p>
+                            </div>
+                            <div class="price">
+                                <p>15 990 ₽</p>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <div class="card-disc">
+                                <p>ö-15</p>
+                                <p>light</p>
+                            </div>
+                            <div class="price">
+                                <p>15 990 ₽</p>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <div class="card-disc">
+                                <p>ö-02</p>
+                                <p>dark</p>
+                            </div>
+                            <div class="price">
+                                <p>15 990 ₽</p>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <div class="card-disc">
+                                <p>ö-18</p>
+                                <p>light</p>
+                            </div>
+                            <div class="price">
+                                <p>15 990 ₽</p>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <div class="card-disc">
+                                <p>ö-04</p>
+                                <p>dark</p>
+                            </div>
+                            <div class="price">
+                                <p>15 990 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </main>
+
+    <footer>
+                <div class="footer-content">
+                    <img src="icons/bigLogo.svg">
+                    <p>Concept by <a href="#">Михаил</a>, <a href="#">Андрей</a>, <a href="#">Вячеслав</a></p>
+                </div>
+            </footer>
+            
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
 
 </body>
 </html>
