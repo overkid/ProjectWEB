@@ -5,8 +5,8 @@ const hud = document.querySelector(".hud");
 window.addEventListener("scroll", () => {
     let scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-    if (scrollTop === 0) {
-        // Если в самом верху страницы — показываем всегда
+    if (scrollTop <= 20) {
+        // Если скролл от 0 до 20px — показываем nav и hud
         hud.style.opacity = "1";
         nav.classList.remove("scrolled");
     } else if (scrollTop > lastScrollTop) {
@@ -21,6 +21,7 @@ window.addEventListener("scroll", () => {
 
     lastScrollTop = scrollTop;
 });
+
 
 
 window.addEventListener("scroll", () => {
