@@ -30,6 +30,7 @@
     justify-content: center;
     z-index: 1000;
     transition: transform 800ms ease-in-out;
+    border-bottom: 2px var(--light-gray) solid;
 }
 
 #preloader.hidden {
@@ -152,6 +153,14 @@ span {
 
 .basket {
     height: 28px;
+}
+
+.burger {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
 }
 
 .link {
@@ -566,6 +575,7 @@ footer {
     main {
         gap: 80px;
         width: 100%;
+        transition: filter 400ms
     }
 
     .nav {
@@ -579,7 +589,48 @@ footer {
     }
 
     .basket {
-        margin-top: 10px;
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1100;
+        cursor: pointer;
+    }
+
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 60%;
+        height: 100vh;
+        background-color: var(--white);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 102px 16px;
+        gap: 20px;
+        z-index: 1000;
+        transition: right 400ms;
+        border-left: 2px var(--light-gray) solid;
+    }
+
+    .main-blur {
+        filter: blur(2px);
+        transition: filter 400ms;
+    }    
+
+    .mobile-menu a {
+        font-size: 32px;
+        line-height: 34px;
+        font-weight: 500;
+    }
+
+    .mobile-menu.active {
+        right: 0;
     }
 
     .part {

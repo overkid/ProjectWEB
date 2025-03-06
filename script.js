@@ -121,4 +121,24 @@ window.addEventListener("scroll", () => {
       document.querySelector(".main-photo").style.backgroundPosition = `center calc(50% + ${translateY}px)`;
     }
   });
+
+  
+  const burger = document.querySelector('.burger');
+  const burgerIcon = document.querySelector('.burger img');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const mainContent = document.querySelector('main'); // Добавляем ссылку на main
+  
+  burger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+      
+      if (mobileMenu.classList.contains('active')) {
+          burgerIcon.src = 'icons/menu-opened.svg'; // крестик
+          document.body.style.overflow = 'hidden';
+          mainContent.classList.add('main-blur'); // Добавляем размытие на main
+      } else {
+          burgerIcon.src = 'icons/menu-closed.svg'; // бургер
+          document.body.style.overflow = '';
+          mainContent.classList.remove('main-blur'); // Убираем размытие с main
+      }
+  });
   
