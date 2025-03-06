@@ -321,6 +321,11 @@ span {
     border-top: 2px solid var(--light-gray);
 }
 
+.gallery .container h2 {
+    text-align: left;
+    width: 650px;
+}
+
 .cards {
     display: flex;
     gap: 20px;
@@ -642,6 +647,10 @@ footer {
         margin-top: 10px;
     }
 
+    .h1part {
+        display: none;
+    }
+
     .hero {
         padding: 100px 0 0;
     }
@@ -666,7 +675,15 @@ footer {
     }
 
     .gallery {
-        padding: 20px 0px;
+        padding: 40px 0px;
+    }
+
+    .gallery .container h2 {
+        width: auto;
+    }
+
+    .features .features-content h2 {
+        width: auto;
     }
 
     .cards {
@@ -727,7 +744,7 @@ footer {
     .cta {
         flex-direction: column;
         gap: 20px;
-        padding: 20px;
+        padding: 40px 16px;
     }
 
     .cta1 {
@@ -764,11 +781,11 @@ footer {
     }
 
     footer {
-        padding: 80px 16px 16px 16px;
+        padding: 80px 16px 40px 16px;
     }
 
     footer img {
-        width: 150px;
+        width: 220px;
         height: auto;
     }
 
