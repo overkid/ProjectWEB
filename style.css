@@ -619,8 +619,8 @@ footer {
     }
 
     p {
-        font-size: 14px;
-        line-height: 22px;
+        font-size: 16px;
+        line-height: 24px;
     }
 
     main {
@@ -679,8 +679,22 @@ footer {
     }
 
     .card-button {
-        width: 60px;
-        height: 60px;
+        width: 80px;
+        height: 80px;
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .card:hover {
+        background-size: 100%;
+    }
+    
+    .card:hover .card-button {
+        transform: scale(1);
+    }
+    
+    .card:hover .card-disc {
+        filter: blur(0px);
     }
 
     a.feature {
@@ -742,7 +756,7 @@ footer {
     .cta2 a {
         width: 100%;
         align-items: center;
-        padding: 16px;
+        padding: 16px 24px;
     }
 
     .goUP a {

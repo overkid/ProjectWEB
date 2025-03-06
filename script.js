@@ -42,31 +42,34 @@ window.addEventListener("scroll", () => {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  const elements = document.querySelectorAll("h2, .cards, .p-text, .features-content, .cta1, .cta2");
-
-  elements.forEach((el) => {
-      gsap.set(el, { opacity: 0, y: 20 });
+    const elements = document.querySelectorAll("h2, .cards, .p-text, .features-content, .cta1, .cta2");
+  
+    elements.forEach((el) => {
+        gsap.set(el, { opacity: 0, y: 20 });
+    });
+  
+    const thresholdValue = window.innerWidth > 768 ? 0.4 : 0.1;
+  
+    const observer = new IntersectionObserver(
+        (entries, obs) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    gsap.to(entry.target, { 
+                        opacity: 1, 
+                        y: 0, 
+                        duration: 0.4, 
+                        ease: "power1.out"
+                    });
+                    obs.unobserve(entry.target);
+                }
+            });
+        },
+        { threshold: thresholdValue }
+    );
+  
+    elements.forEach((el) => observer.observe(el));
   });
-
-  const observer = new IntersectionObserver(
-      (entries, obs) => {
-          entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                  gsap.to(entry.target, { 
-                      opacity: 1, 
-                      y: 0, 
-                      duration: 0.4, 
-                      ease: "power1.out"
-                  });
-                  obs.unobserve(entry.target);
-              }
-          });
-      },
-      { threshold: 0.4 }
-  );
-
-  elements.forEach((el) => observer.observe(el));
-});
+  
 
 
 
@@ -110,8 +113,12 @@ logo.addEventListener("mouseleave", () => {
 
 
 window.addEventListener("scroll", () => {
-  let scrollTop = window.scrollY;
-  let translateY = scrollTop * -0.1; // Двигаем вверх, но мягко
-
-  document.querySelector(".main-photo").style.backgroundPosition = `center calc(50% + ${translateY}px)`;
-});
+    // Проверяем, если ширина экрана 768px или меньше
+    if (window.innerWidth >= 768) {
+      let scrollTop = window.scrollY;
+      let translateY = scrollTop * -0.1; // Двигаем вверх, но мягко
+  
+      document.querySelector(".main-photo").style.backgroundPosition = `center calc(50% + ${translateY}px)`;
+    }
+  });
+  
