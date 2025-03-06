@@ -75,16 +75,18 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function adjustZoom() {
-  const baseWidth = 1920; // Базовая ширина дизайна
-  const screenWidth = window.innerWidth; // Текущая ширина экрана
-  const zoomLevel = screenWidth / baseWidth; // Вычисляем коэффициент масштаба
-
-  document.body.style.zoom = zoomLevel; // Применяем масштаб ко всему body
-}
-
-// Вызываем функцию при загрузке страницы и при изменении размера окна
-window.addEventListener('resize', adjustZoom);
-adjustZoom();
+    if (window.innerWidth > 768) {
+      const baseWidth = 1920;
+      const screenWidth = window.innerWidth;
+      const zoomLevel = screenWidth / baseWidth;
+      document.body.style.zoom = zoomLevel;
+    } else {
+      document.body.style.zoom = ""; // Убираем zoom на мобилках
+    }
+  }
+  
+  window.addEventListener('resize', adjustZoom);
+  adjustZoom();  
 
 
 const logo = document.querySelector(".logo img");
