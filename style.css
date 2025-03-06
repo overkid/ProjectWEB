@@ -579,7 +579,7 @@ footer {
     }
 
     .nav {
-        padding: 20px;
+        padding: 20px 16px;
         height: auto;
         justify-content: space-between;
     }
@@ -611,7 +611,7 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        padding: 108px 20px;
+        padding: 102px 16px;
         gap: 20px;
         z-index: 1000;
         transition: right 400ms;
@@ -638,7 +638,7 @@ footer {
     }
 
     .hero {
-        padding: 108px 0 0;
+        padding: 102px 0 0;
     }
 
     .p-text {
@@ -652,7 +652,7 @@ footer {
     }
 
     .container {
-        padding: 0 20px;
+        padding: 0 16px;
     }
 
     .hero .container {
@@ -741,13 +741,17 @@ footer {
     }
 
     .feature-content {
-        padding: 20px;
+        padding: 16px;
         display: flex;
         gap: 20px;
     }
 
     .feature-content p {
         display: none;
+    }
+
+    .features-content h2 {
+        padding: 0px 16px;
     }
 
     .features-lines a:hover {
@@ -757,7 +761,7 @@ footer {
     .cta {
         flex-direction: column;
         gap: 20px;
-        padding: 40px 20px;
+        padding: 40px 16px;
     }
 
     .cta1 {
@@ -774,7 +778,7 @@ footer {
     }
 
     .cta1 h2{
-        margin-bottom: 20px;
+        margin-bottom: 16px;
     }
 
     .cta2 a h3 {
@@ -786,15 +790,15 @@ footer {
     .cta2 a {
         width: 100%;
         align-items: center;
-        padding: 20px 24px;
+        padding: 16px 24px;
     }
 
     .goUP a {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     footer {
-        padding: 80px 20px 40px 20px;
+        padding: 80px 16px 40px 16px;
     }
 
     footer img {
