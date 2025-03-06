@@ -5,17 +5,22 @@ const hud = document.querySelector(".hud");
 window.addEventListener("scroll", () => {
     let scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-    if (scrollTop > lastScrollTop) {
+    if (scrollTop === 0) {
+        // Если в самом верху страницы — показываем всегда
+        hud.style.opacity = "1";
+        nav.classList.remove("scrolled");
+    } else if (scrollTop > lastScrollTop) {
+        // Скроллим вниз — скрываем
         hud.style.opacity = "0";
         nav.classList.add("scrolled");
     } else {
+        // Скроллим вверх — показываем
         hud.style.opacity = "1";
         nav.classList.remove("scrolled");
     }
 
     lastScrollTop = scrollTop;
 });
-
 
 
 window.addEventListener("scroll", () => {
