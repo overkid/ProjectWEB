@@ -575,7 +575,7 @@ footer {
     main {
         gap: 80px;
         width: 100%;
-        transition: filter 400ms
+        transition: filter 400ms, transform 400ms;
     }
 
     .nav {
@@ -619,8 +619,9 @@ footer {
     }
 
     .main-blur {
+        transform:translateX(-24px);
         filter: blur(2px);
-        transition: filter 400ms;
+        transition: filter 400ms, transform 400ms 100ms;
     }    
 
     .mobile-menu a {
