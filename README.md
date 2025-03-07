@@ -9,16 +9,14 @@
 
 <h2>🔥 Хайлайты</h2>
 
-<img src='https://github.com/user-attachments/assets/7cd5bed7-231d-415d-830e-74ab4859e995' width='500'>
-<br>
 <img src='https://github.com/user-attachments/assets/d8c0396c-b7cd-4558-90c3-934af86683cf' width='500'>
-<br>
+<img src='https://github.com/user-attachments/assets/905cdbff-5c4d-4f44-b48c-ac1871e46e5e' width='140'>
 
 <h2>🚀 Прогресс</h2>
 
 | №   | Страница          | Cделано... |
 | --- | ----------------- | -------- |
-| 1   | Главная           | 🟨 ~65%  |
+| 1   | Главная           | 🟨 ~78%  |
 | 2   | Каталог           | 🟥 ~5%   |
 | 3   | Контакты          | 🟥 ~0%   |
 | 4   | Корзина           | 🟥 ~0%   |
