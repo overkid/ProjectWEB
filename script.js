@@ -6,21 +6,31 @@ window.addEventListener("scroll", () => {
     let scrollTop = window.scrollY || document.documentElement.scrollTop;
 
     if (scrollTop <= 20) {
-        // Если скролл от 0 до 20px — показываем nav и hud
         hud.style.opacity = "1";
         nav.classList.remove("scrolled");
+
+        if (window.innerWidth <= 768) {
+            logo.style.opacity = "1";
+        }
     } else if (scrollTop > lastScrollTop) {
-        // Скроллим вниз — скрываем
         hud.style.opacity = "0";
         nav.classList.add("scrolled");
+
+        if (window.innerWidth <= 768) {
+            logo.style.opacity = "0";
+        }
     } else {
-        // Скроллим вверх — показываем
         hud.style.opacity = "1";
         nav.classList.remove("scrolled");
+
+        if (window.innerWidth <= 768) {
+            logo.style.opacity = "1";
+        }
     }
 
     lastScrollTop = scrollTop;
 });
+
 
 
 

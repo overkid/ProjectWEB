@@ -582,6 +582,10 @@ footer {
         justify-content: space-between;
     }
 
+    .logo img {
+        transition: opacity 0.4s;
+    }
+
     .hud {
         display: none;
     }
@@ -671,7 +675,7 @@ footer {
     }
 
     .main-photo {
-        height: 40vh;
+        height: 340px;
         margin-bottom: 20px;
         background: url(media/main-photo.png) left center/cover no-repeat;
         background-size: cover;
