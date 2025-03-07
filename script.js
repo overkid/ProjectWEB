@@ -126,19 +126,28 @@ window.addEventListener("scroll", () => {
   const burger = document.querySelector('.burger');
   const burgerIcon = document.querySelector('.burger img');
   const mobileMenu = document.querySelector('.mobile-menu');
-  const mainContent = document.querySelector('main'); // Добавляем ссылку на main
+  const mainContent = document.querySelector('main');
   
   burger.addEventListener('click', () => {
       mobileMenu.classList.toggle('active');
-      
+  
       if (mobileMenu.classList.contains('active')) {
-          burgerIcon.src = 'icons/menu-opened.svg'; // крестик
+          burgerIcon.style.opacity = '0';
+  
+          setTimeout(() => {
+              burgerIcon.src = 'icons/menu-opened.svg';
+              burgerIcon.style.opacity = '1';
+          }, 200);
           document.body.style.overflow = 'hidden';
-          mainContent.classList.add('main-blur'); // Добавляем размытие на main
+          mainContent.classList.add('main-blur');
       } else {
-          burgerIcon.src = 'icons/menu-closed.svg'; // бургер
+          burgerIcon.style.opacity = '0';
+  
+          setTimeout(() => {
+              burgerIcon.src = 'icons/menu-closed.svg';
+              burgerIcon.style.opacity = '1';
+          }, 200);
           document.body.style.overflow = '';
-          mainContent.classList.remove('main-blur'); // Убираем размытие с main
+          mainContent.classList.remove('main-blur');
       }
   });
-  

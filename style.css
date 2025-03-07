@@ -151,6 +151,10 @@ span {
     transition: opacity 0.3s ease-in-out;
 }
 
+.goods {
+    color: var(--gray);
+}
+
 .basket {
     height: 28px;
 }
@@ -184,12 +188,6 @@ span {
 
 .link:hover::after, .link:focus::after {
     width: 100%;
-}
-
-.moon-icon {
-    width: 24px;
-    height: 24px;
-    background-attachment: fixed;
 }
 
 .hero {
@@ -601,6 +599,10 @@ footer {
         cursor: pointer;
     }
 
+    .burger img {
+        transition: opacity 200ms;
+    }
+
     .mobile-menu {
         position: fixed;
         top: 0;
@@ -610,8 +612,8 @@ footer {
         background-color: var(--white);
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
-        padding: 102px 16px;
+        align-items: flex-start;
+        padding: 102px 20px;
         gap: 20px;
         z-index: 1000;
         transition: right 400ms;
@@ -627,6 +629,13 @@ footer {
     .mobile-menu a {
         font-size: 32px;
         line-height: 34px;
+        font-weight: 500;
+    }
+
+    .mobile-menu a:nth-last-child(1) {
+        margin-top: 40px;
+        font-size: 24px;
+        line-height: 28px;
         font-weight: 500;
     }
 
