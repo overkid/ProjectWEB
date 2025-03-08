@@ -529,7 +529,7 @@ footer {
 
 .footer-content a {
     color: var(--white);
-    text-decoration: none;
+    text-decoration: underline;
     font-weight: 400;
     transition: 400ms;
 }
