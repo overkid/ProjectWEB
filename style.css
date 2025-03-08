@@ -627,7 +627,7 @@ footer {
     .main-blur {
         transform:translateY(24px);
         filter: blur(2px);
-        transition: filter 800ms, transform 800ms 100ms;
+        transition: filter 800ms, transform 800ms;
     }    
 
     .mobile-menu a {

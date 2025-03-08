@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
             setTimeout(() => {
                 preloader.style.display = "none";
             }, 1000);
-        }, 500);
+        }, 400);
     });
 
     // Автоматический зум для больших экранов
