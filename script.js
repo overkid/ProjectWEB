@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Логотип должен быть видимым
             logo.style.opacity = "1";
-
+            
             // Плавное появление пунктов меню
             setTimeout(() => {
                 menuLinks.forEach((link, index) => {
@@ -121,11 +121,15 @@ document.addEventListener("DOMContentLoaded", () => {
     // Лоадер (прелоадер)
     window.addEventListener("load", () => {
         const preloader = document.getElementById("preloader");
+        mainContent.classList.add("main-blur");
         setTimeout(() => {
             preloader.classList.add("hidden");
             setTimeout(() => {
                 preloader.style.display = "none";
             }, 1000);
+            setTimeout(() => {
+                mainContent.classList.remove("main-blur");
+            }, 200);
         }, 400);
     });
 
