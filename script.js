@@ -41,52 +41,62 @@ document.addEventListener("DOMContentLoaded", () => {
         lastScrollTop = scrollTop;
     });
 
-    // Бургер-меню: анимация и управление логотипом
-    burger.addEventListener("click", () => {
-        mobileMenu.classList.toggle("active");
+// Бургер-меню: анимация и управление логотипом
+burger.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active");
 
-        if (mobileMenu.classList.contains("active")) {
-            burgerIcon.style.opacity = "0";
-            setTimeout(() => {
-                burgerIcon.src = "icons/menu-opened.svg";
-                burgerIcon.style.opacity = "1";
-            }, 200);
-            document.body.style.overflow = "hidden";
-            mainContent.classList.add("main-blur");
+    if (mobileMenu.classList.contains("active")) {
+        burgerIcon.style.opacity = "0";
+        setTimeout(() => {
+            burgerIcon.src = "icons/menu-opened.svg";
+            burgerIcon.style.opacity = "1";
+        }, 200);
+        document.body.style.overflow = "hidden";
+        mainContent.classList.add("main-blur");
 
-            // Логотип должен быть видимым
-            logo.style.opacity = "1";
-            
-            // Плавное появление пунктов меню
-            setTimeout(() => {
-                menuLinks.forEach((link, index) => {
-                    setTimeout(() => {
-                        link.style.opacity = "1";
-                        link.style.transform = "translateY(0)";
-                    }, index * 200);
-                });
-            }, 700);
-        } else {
-            burgerIcon.style.opacity = "0";
-            setTimeout(() => {
-                burgerIcon.src = "icons/menu-closed.svg";
-                burgerIcon.style.opacity = "1";
-            }, 200);
-            document.body.style.overflow = "";
-            mainContent.classList.remove("main-blur");
+        // Логотип и фон должны быть видимыми
+        logo.style.opacity = "1";
+        nav.classList.add("scrolled"); 
 
-            // Если экран меньше 768px и прокрутка больше 20px — скрываем лого
-            if (window.innerWidth <= 768 && window.scrollY > 20) {
-                logo.style.opacity = "0";
-            }
-
-            // Мгновенно скрываем ссылки перед закрытием меню
-            menuLinks.forEach((link) => {
-                link.style.opacity = "0";
-                link.style.transform = "translateY(10px)";
+        // Плавное появление пунктов меню
+        setTimeout(() => {
+            menuLinks.forEach((link, index) => {
+                setTimeout(() => {
+                    link.style.opacity = "1";
+                    link.style.transform = "translateY(0)";
+                }, index * 200);
             });
+        }, 700);
+    } else {
+        burgerIcon.style.opacity = "0";
+        setTimeout(() => {
+            burgerIcon.src = "icons/menu-closed.svg";
+            burgerIcon.style.opacity = "1";
+        }, 200);
+        document.body.style.overflow = "";
+        mainContent.classList.remove("main-blur");
+
+        // Мгновенно скрываем ссылки перед закрытием меню
+        menuLinks.forEach((link) => {
+            link.style.opacity = "0";
+            link.style.transform = "translateY(10px)";
+        });
+
+        // Если экран меньше 768px и прокрутка больше 20px — скрываем лого, но проверяем направление скролла
+        if (window.innerWidth <= 768) {
+            let scrollTop = window.scrollY;
+            
+            if (scrollTop > 20) {
+                logo.style.opacity = "0"; 
+                nav.classList.add("scrolled"); // Оставляем nav затемнённым
+            } else {
+                logo.style.opacity = "1";
+                nav.classList.remove("scrolled");
+            }
         }
-    });
+    }
+});
+
 
     // Параллакс-эффект для фото
     window.addEventListener("scroll", () => {
