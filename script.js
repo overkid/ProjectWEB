@@ -179,3 +179,36 @@ burger.addEventListener("click", () => {
         }
     });
 });
+
+
+
+// Получаем элементы DOM
+const modal = document.getElementById("myModal");
+const btn = document.getElementById("openModalBtn");
+const span = document.getElementsByClassName("close")[0];
+
+// Открываем модальное окно при клике на кнопку
+btn.onclick = function() {
+    modal.style.display = "block";
+    setTimeout(() => {
+        modal.classList.add("open"); // Добавляем класс для анимации
+    }, 10); // Небольшая задержка для активации анимации
+}
+
+// Закрываем модальное окно при клике на крестик
+span.onclick = function() {
+    modal.classList.remove("open"); // Убираем класс для анимации
+    setTimeout(() => {
+        modal.style.display = "none"; // Скрываем модальное окно после завершения анимации
+    }, 300); // Задержка должна соответствовать длительности анимации
+}
+
+// Закрываем модальное окно при клике вне его области
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.classList.remove("open"); // Убираем класс для анимации
+        setTimeout(() => {
+            modal.style.display = "none"; // Скрываем модальное окно после завершения анимации
+        }, 300); // Задержка должна соответствовать длительности анимации
+    }
+}

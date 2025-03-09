@@ -46,6 +46,7 @@
                             </div>
 
                         </div>
+                        <button id="openModalBtn">
                         <div class="card">
                             <div class="card-disc">
                                 <p>ö-02</p>
@@ -55,8 +56,8 @@
                             <div class="price">
                                 <p>15 990 ₽</p>
                             </div>
-
                         </div>
+                        </button>
                         <div class="card">
                             <div class="card-disc">
                                 <p>ö-18</p>
@@ -140,6 +141,16 @@
                 </div>
             </section>
     </main>
+
+        <button id="openModalBtn" class="btn">nvn</button>
+        <div id="myModal" class="modal">
+             <div class="modal-content">
+                 <span class="close">&times;</span>
+                  <h1>ö-02</h1>
+             </div>
+        </div>
+
+<script src="script.js"></script> 
 
     <footer>
                 <div class="footer-content">
