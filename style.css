@@ -528,7 +528,7 @@ footer {
 }
 
 .footer-content img {
-    width: 480px;
+    width: 400px;
 }
 
 .footer-content a {
@@ -836,7 +836,7 @@ footer {
     }
 
     .footer-content img {
-        width: 320px;
+        width: 240px;
         height: auto;
     }
 
@@ -844,7 +844,5 @@ footer {
         padding: 0px;
         display: flex;
         align-items: start;
-        flex-direction: column;
-        gap: 20px;
     }
 }
