@@ -116,7 +116,7 @@ burger.addEventListener("click", () => {
     const elements = document.querySelectorAll("h2, .cards, .p-text, .features-content, .cta1, .cta2");
     elements.forEach((el) => gsap.set(el, { opacity: 0, y: 20 }));
 
-    const thresholdValue = window.innerWidth > 768 ? 0.4 : 0.1;
+    const thresholdValue = window.innerWidth > 768 ? 0.4 : 0.8;
     const observer = new IntersectionObserver((entries, obs) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {

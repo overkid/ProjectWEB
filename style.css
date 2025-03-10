@@ -535,12 +535,10 @@ footer {
     color: var(--white);
     text-decoration: underline;
     font-weight: 400;
-    transition: 400ms;
 }
 
 .footer-content a:hover {
-    color: var(--gray);
-    transition: 400ms;
+    text-decoration: none;
 }
 
 @media (max-width: 768px) {
