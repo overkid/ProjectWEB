@@ -503,20 +503,22 @@ footer {
     padding: 0px 20px 0px 20px;
 
     display: flex;
-    justify-content: space-between;
-    align-items: end;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer-content img {
+    width: 400px;
 }
 
 .footer-content a {
     color: var(--white);
     text-decoration: underline;
     font-weight: 400;
-    transition: 400ms;
 }
 
 .footer-content a:hover {
-    color: var(--gray);
-    transition: 400ms;
+    text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -811,8 +813,8 @@ footer {
         padding: 80px 16px 40px 16px;
     }
 
-    footer img {
-        width: 220px;
+    .footer-content img {
+        width: 240px;
         height: auto;
     }
 
@@ -820,7 +822,5 @@ footer {
         padding: 0px;
         display: flex;
         align-items: start;
-        flex-direction: column;
-        gap: 20px;
     }
 }
