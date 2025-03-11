@@ -147,6 +147,8 @@
              <div class="modal-content">
                  <span class="close">&times;</span>
                   <h1>ö-02</h1>
+                  <img src="media/Product Card.png">
+                  <p>Этот светлый деревянный стул, вдохновленный швейцарской архитектурой и скандинавским минимализмом.</p>
              </div>
         </div>
 
