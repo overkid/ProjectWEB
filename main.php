@@ -36,7 +36,7 @@
 
                     <div class="cards-ctlg">
 
-                        <div class="card">
+                        <div class="cardz">
                             <div class="card-disc">
                                 <p>ö-15</p>
                                 <p>light</p>
@@ -47,7 +47,7 @@
 
                         </div>
                         <button id="openModalBtn">
-                        <div class="card">
+                        <div class="cardz">
                             <div class="card-disc">
                                 <p>ö-02</p>
                                 <p>dark</p>
@@ -58,7 +58,7 @@
                             </div>
                         </div>
                         </button>
-                        <div class="card">
+                        <div class="cardz">
                             <div class="card-disc">
                                 <p>ö-18</p>
                                 <p>light</p>
@@ -68,7 +68,7 @@
                             </div>
 
                         </div>
-                        <div class="card">
+                        <div class="cardz">
                             <div class="card-disc">
                                 <p>ö-04</p>
                                 <p>dark</p>
@@ -78,7 +78,7 @@
                             </div>
 
                         </div>
-                        <div class="card">
+                        <div class="cardz">
                             <div class="card-disc">
                                 <p>ö-15</p>
                                 <p>light</p>
@@ -88,7 +88,7 @@
                             </div>
 
                         </div>
-                        <div class="card">
+                        <div class="cardz">
                             <div class="card-disc">
                                 <p>ö-15</p>
                                 <p>light</p>
@@ -98,7 +98,7 @@
                             </div>
 
                         </div>
-                        <div class="card">
+                        <div class="cardz">
                             <div class="card-disc">
                                 <p>ö-15</p>
                                 <p>light</p>
@@ -108,7 +108,7 @@
                             </div>
 
                         </div>
-                        <div class="card">
+                        <div class="cardz">
                             <div class="card-disc">
                                 <p>ö-02</p>
                                 <p>dark</p>
@@ -118,7 +118,7 @@
                             </div>
 
                         </div>
-                        <div class="card">
+                        <div class="cardz">
                             <div class="card-disc">
                                 <p>ö-18</p>
                                 <p>light</p>
@@ -128,7 +128,7 @@
                             </div>
 
                         </div>
-                        <div class="card">
+                        <div class="cardz">
                             <div class="card-disc">
                                 <p>ö-04</p>
                                 <p>dark</p>
@@ -145,10 +145,33 @@
         <button id="openModalBtn" class="btn">nvn</button>
         <div id="myModal" class="modal">
              <div class="modal-content">
-                 <span class="close">&times;</span>
-                  <h1>ö-02</h1>
-                  <img src="media/Product Card.png">
-                  <p>Этот светлый деревянный стул, вдохновленный швейцарской архитектурой и скандинавским минимализмом.</p>
+             <h1>Ӧ-02</h1>
+             <span class="close">&times;</span>
+                <div class="main_modal_block">
+                    <div class="left_modal_block">
+                        <div class="prew_cardz">
+                        <img src="media/Product Card.png" height="440px" width="440px">
+                        <div class="block_img_prew">
+                            <img src="media/Product Card Min.png" height="210px" width="210px">
+                            <img src="media/Product Card Min2.png" height="210px" width="210px">
+                        </div>
+                        </div>
+
+                   
+                 </div>
+                 <div class="right_modal_block">
+                    <div class="info_cardz">
+                        <p>Модель:</p>
+                        <p>Цвет:</p>
+                        <h3>15990</h3>
+                        <p>Этот светлый деревянный стул, вдохновленный швейцарской архитектурой и скандинавским минимализмом.</p>
+                    </div>
+                    <div class="btn_add_basket">
+                        <h3>В корзину</h3>
+                        <!-- <img src="icons/plus-solid.svg"> -->
+                    </div>
+                 </div>
+                </div>
              </div>
         </div>
 
