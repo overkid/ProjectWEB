@@ -144,36 +144,42 @@
 
         <button id="openModalBtn" class="btn">nvn</button>
         <div id="myModal" class="modal">
-             <div class="modal-content">
-             <span class="close"><img src="icons/Collection Arrow-Gray.svg"></span>
-             <h1>Ӧ-02</h1>
+            <div class="modal-content">
+            <div class="model-name">
+            <span class="close"><img src="icons/Collection Arrow-Gray.svg"></span>
+            <h1>Ӧ-02</h1>
+            </div>
                 <div class="main_modal_block">
                     <div class="left_modal_block">
                         <div class="prew_cardz">
                         <img src="media/Product Card.png" height="440px" width="440px">
                         </div>
-
-                   
-                 </div>
+                </div>
                  <div class="right_modal_block">
                     <div class="info_cardz">
-                        <div class="model">
-                            <p>Модель:</p>
-                            <p class="model-modal">ö-02</p>
-                        </div>
-                        <div class="sell">
-                            <p>Цвет:</p>
-                            <p class="model-modal">LIGHT</p>
+                        <div class="info">
+                            <div class="model">
+                                <p class="p-disc-g">Модель:</p>
+                                <p class="p-disc-b">ö-02</p>
+                            </div>
+                            <div class="sell">
+                                <p class="p-disc-g">Цвет:</p>
+                                <p class="p-disc-b">LIGHT</p>
+                            </div>
                         </div>
                         <div class="line-space"></div>
-
-                        <h3>15 990 ₽</h3>
+                        
+                        <div class="price-info">
+                            <h3>15 990 ₽</h3>
+                            <p class="dollar-price">~147,18 $</p>
+                        </div>
+                        
                         <p>Этот светлый деревянный стул, вдохновленный швейцарской архитектурой и скандинавским минимализмом.</p>
                     </div>
-                    <div class="btn_add_basket">
+                    <button class="btn_add_basket">
                         <h3>В корзину</h3>
-                        <!-- <img src="icons/plus-solid.svg"> -->
-                    </div>
+                        <img src="icons/plus-solid.svg">
+                    </button>
                  </div>
                 </div>
              </div>
