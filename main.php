@@ -11,19 +11,28 @@
     <link rel="stylesheet" href="catalog.css">
 </head>
 <body>
-    
-    <div class="nav">
+<div class="nav">
         <div class="logo">
-            <img src="icons/Logo.svg">
+            <a href="index.html"><img src="icons/Logo.svg"></a>
         </div>
-         <div class="hud">
+        <div class="hud">
             <a href="index.html" class="link">Главная</a>
             <a href="main.php" class="link">Каталог</a>
             <a href="contacts.php" class="link">Контакты</a>
          </div>
          <div class="basket">
-            <a href="#" class="link link-basket">Корзина(0)</a>
+            <a href="basket.html" class="link link-basket">Корзина (<span class="goods">0</span>)</a>
          </div>
+         <div class="burger">
+            <img src="icons/menu-closed.svg">
+         </div>
+
+         <div class="mobile-menu">
+            <a href="index.html" class="link" style="color:var(--black)">• Главная</a>
+            <a href="main.php" class="link" style="color:var(--gray)">• Каталог</a>
+            <a href="contacts.php" class="link" style="color:var(--gray)">• Контакты</a>
+            <a href="#" class="link">Корзина (<span class="goods">0</span>)</a>
+        </div>
     </div>
     <main>
 
@@ -166,7 +175,7 @@
                     </div>
                     <p>Этот светлый деревянный стул, вдохновленный швейцарской архитектурой и скандинавским минимализмом.</p>
                 </div>
-                <button class="btn_add_basket">
+                <button class="btn_add_basket" data-product='{"name": "Ӧ-15", "price": 12990, "image": "media/Product Card.png"}'>
                     <h3>В корзину</h3>
                     <img src="icons/plus-solid.svg">
                 </button>
@@ -206,7 +215,7 @@
                     </div>
                     <p>Этот темный деревянный стул, вдохновленный швейцарской архитектурой и скандинавским минимализмом.</p>
                 </div>
-                <button class="btn_add_basket">
+                <button class="btn_add_basket" data-product='{"name": "Ӧ-02", "price": 15990, "image": "media/Product Card-1.png"}'>
                     <h3>В корзину</h3>
                     <img src="icons/plus-solid.svg">
                 </button>
@@ -246,7 +255,7 @@
                     </div>
                     <p>Этот светлый деревянный стул, вдохновленный швейцарской архитектурой и скандинавским минимализмом.</p>
                 </div>
-                <button class="btn_add_basket">
+                <button class="btn_add_basket" data-product='{"name": "Ӧ-18", "price": 13490, "image": "media/Product Card-2.png"}'>
                     <h3>В корзину</h3>
                     <img src="icons/plus-solid.svg">
                 </button>
@@ -286,7 +295,7 @@
                     </div>
                     <p>Этот темный деревянный стул, вдохновленный швейцарской архитектурой и скандинавским минимализмом.</p>
                 </div>
-                <button class="btn_add_basket">
+                <button class="btn_add_basket" data-product='{"name": "Ӧ-04", "price": 15990, "image": "media/Product Card-3.png"}'>
                     <h3>В корзину</h3>
                     <img src="icons/plus-solid.svg">
                 </button>
@@ -326,7 +335,7 @@
                     </div>
                     <p>Этот светлый деревянный стул, вдохновленный швейцарской архитектурой и скандинавским минимализмом.</p>
                 </div>
-                <button class="btn_add_basket">
+                <button class="btn_add_basket" data-product='{"name": "Ӧ-15", "price": 15990, "image": "media/Product Card-2.png"}'>
                     <h3>В корзину</h3>
                     <img src="icons/plus-solid.svg">
                 </button>
@@ -366,7 +375,7 @@
                     </div>
                     <p>Этот светлый деревянный стул, вдохновленный швейцарской архитектурой и скандинавским минимализмом.</p>
                 </div>
-                <button class="btn_add_basket">
+                <button class="btn_add_basket" data-product='{"name": "Ӧ-15", "price": 15990, "image": "media/Product Card-3.png"}'>
                     <h3>В корзину</h3>
                     <img src="icons/plus-solid.svg">
                 </button>
@@ -406,7 +415,7 @@
                     </div>
                     <p>Этот светлый деревянный стул, вдохновленный швейцарской архитектурой и скандинавским минимализмом.</p>
                 </div>
-                <button class="btn_add_basket">
+                <button class="btn_add_basket" data-product='{"name": "Ӧ-15", "price": 15990, "image": "media/Product Card.png"}'>
                     <h3>В корзину</h3>
                     <img src="icons/plus-solid.svg">
                 </button>
@@ -446,7 +455,7 @@
                     </div>
                     <p>Этот темный деревянный стул, вдохновленный швейцарской архитектурой и скандинавским минимализмом.</p>
                 </div>
-                <button class="btn_add_basket">
+                <button class="btn_add_basket" data-product='{"name": "Ӧ-02", "price": 15990, "image": "media/Product Card-1.png"}'>
                     <h3>В корзину</h3>
                     <img src="icons/plus-solid.svg">
                 </button>
@@ -486,7 +495,7 @@
                     </div>
                     <p>Этот светлый деревянный стул, вдохновленный швейцарской архитектурой и скандинавским минимализмом.</p>
                 </div>
-                <button class="btn_add_basket">
+                <button class="btn_add_basket" data-product='{"name": "Ӧ-18", "price": 15990, "image": "media/Product Card-2.png"}'>
                     <h3>В корзину</h3>
                     <img src="icons/plus-solid.svg">
                 </button>
@@ -526,7 +535,7 @@
                     </div>
                     <p>Этот темный деревянный стул, вдохновленный швейцарской архитектурой и скандинавским минимализмом.</p>
                 </div>
-                <button class="btn_add_basket">
+                <button class="btn_add_basket" data-product='{"name": "Ӧ-04", "price": 15990, "image": "media/Product Card-3.png"}'>
                     <h3>В корзину</h3>
                     <img src="icons/plus-solid.svg">
                 </button>
@@ -541,7 +550,7 @@
                     <img src="icons/bigLogo.svg">
                     <p><a href="https://www.instagram.com/overdosekid">Михаил</a> (Designer, Developer)<br><a href="#">Андрей</a> (Developer)<br>Вячеслав (Prosto respect)</p>
                 </div>
-            </footer>
+    </footer>
 
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>

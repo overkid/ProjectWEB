@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hove</title>
+    <title>höve</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="basket.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <link rel="icon" href="/favicon.ico">
 </head>
 <body>
-<div class="nav">
+    <div class="nav">
         <div class="logo">
             <a href="index.html"><img src="icons/Logo.svg"></a>
         </div>
@@ -34,8 +38,25 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <section class="basket-section">
+        <h2>Корзина</h2>
+        <div class="basket-items">
+            <!-- Товары будут добавляться сюда -->
+        </div>
+        <div class="total">
+            <p>Итого: <span class="total-price">0 ₽</span></p>
+        </div>
+        <button class="clear-cart">Очистить корзину</button>
+    </section>
 
+
+    <footer>
+        <div class="footer-content">
+            <img src="icons/bigLogo.svg">
+            <p><a href="https://www.instagram.com/overdosekid">Михаил</a> (Designer, Developer)<br><a href="#">Андрей</a> (Developer)<br>Вячеслав (Prosto respect)</p>
+        </div>
+</footer>
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </body>
 </html>
