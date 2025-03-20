@@ -22,183 +22,528 @@
             <a href="contacts.php" class="link">Контакты</a>
          </div>
          <div class="basket">
-            <!-- <img class = "moon-icon" src = "icons/moon.svg"> -->
             <a href="#" class="link link-basket">Корзина(0)</a>
          </div>
     </div>
     <main>
 
     <section class="ctlg">
-                <div class="container-ctlg">
-                <div class="zzz">
-                            <p>Каталог.</p>
-                        </div>
-                        <div>
+        <div class="container-ctlg">
+            <div class="zzz">
+                <p>Каталог.</p>
+            </div>
+            <div class="cards-ctlg">
+    <div class="cardz" data-modal="modal1">
+        <div class="card-disc">
+            <p>ö-15</p>
+            <p>light</p>
+        </div>
+        <div class="price">
+            <p>12 990 ₽</p>
+        </div>
+    </div>
+
+    <div class="cardz" data-modal="modal2">
+        <div class="card-disc">
+            <p>ö-02</p>
+            <p>dark</p>
+        </div>
+        <div class="price">
+            <p>15 990 ₽</p>
+        </div>
+    </div>
+
+    <div class="cardz" data-modal="modal3">
+        <div class="card-disc">
+            <p>ö-18</p>
+            <p>light</p>
+        </div>
+        <div class="price">
+            <p>13 490 ₽</p>
+        </div>
+    </div>
+
+    <div class="cardz" data-modal="modal4">
+        <div class="card-disc">
+            <p>ö-04</p>
+            <p>dark</p>
+        </div>
+        <div class="price">
+            <p>15 990 ₽</p>
+        </div>
+    </div>
+
+    <div class="cardz" data-modal="modal5">
+        <div class="card-disc">
+            <p>ö-15</p>
+            <p>light</p>
+        </div>
+        <div class="price">
+            <p>15 990 ₽</p>
+        </div>
+    </div>
+
+    <div class="cardz" data-modal="modal6">
+        <div class="card-disc">
+            <p>ö-15</p>
+            <p>light</p>
+        </div>
+        <div class="price">
+            <p>15 990 ₽</p>
+        </div>
+    </div>
+
+    <div class="cardz" data-modal="modal7">
+        <div class="card-disc">
+            <p>ö-15</p>
+            <p>light</p>
+        </div>
+        <div class="price">
+            <p>15 990 ₽</p>
+        </div>
+    </div>
+
+    <div class="cardz" data-modal="modal8">
+        <div class="card-disc">
+            <p>ö-02</p>
+            <p>dark</p>
+        </div>
+        <div class="price">
+            <p>15 990 ₽</p>
+        </div>
+    </div>
+
+    <div class="cardz" data-modal="modal9">
+        <div class="card-disc">
+            <p>ö-18</p>
+            <p>light</p>
+        </div>
+        <div class="price">
+            <p>15 990 ₽</p>
+        </div>
+    </div>
+
+    <div class="cardz" data-modal="modal10">
+        <div class="card-disc">
+            <p>ö-04</p>
+            <p>dark</p>
+        </div>
+        <div class="price">
+            <p>15 990 ₽</p>
+        </div>
+    </div>
+</div>
+    </section>
+
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <div class="model-name">
+            <span class="close"><img src="icons/Collection Arrow-Gray.svg"></span>
+            <h1>Ӧ-15</h1>
+        </div>
+        <div class="main_modal_block">
+            <div class="left_modal_block">
+                <div class="prew_cardz">
+                    <img src="media/Product Card.png" height="440px" width="440px">
                 </div>
-                    <div class="cards-ctlg">
-
-                        <div class="cardz">
-                            <div class="card-disc">
-                                <p>ö-15</p>
-                                <p>light</p>
-                            </div>
-                            <div class="price">
-                                <p>12 990 ₽</p>
-                            </div>
-
+            </div>
+            <div class="right_modal_block">
+                <div class="info_cardz">
+                    <div class="info">
+                        <div class="model">
+                            <p class="p-disc-g">Модель:</p>
+                            <p class="p-disc-b">ö-15</p>
                         </div>
-                        <button id="openModalBtn">
-                        <div class="cardz">
-                            <div class="card-disc">
-                                <p>ö-02</p>
-                                <p>dark</p>
-
-                            </div>
-                            <div class="price">
-                                <p>15 990 ₽</p>
-                            </div>
-                        </div>
-                        </button>
-                        <div class="cardz">
-                            <div class="card-disc">
-                                <p>ö-18</p>
-                                <p>light</p>
-                            </div>
-                            <div class="price">
-                                <p>13 490 ₽</p>
-                            </div>
-
-                        </div>
-                        <div class="cardz">
-                            <div class="card-disc">
-                                <p>ö-04</p>
-                                <p>dark</p>
-                            </div>
-                            <div class="price">
-                                <p>15 990 ₽</p>
-                            </div>
-
-                        </div>
-                        <div class="cardz">
-                            <div class="card-disc">
-                                <p>ö-15</p>
-                                <p>light</p>
-                            </div>
-                            <div class="price">
-                                <p>15 990 ₽</p>
-                            </div>
-
-                        </div>
-                        <div class="cardz">
-                            <div class="card-disc">
-                                <p>ö-15</p>
-                                <p>light</p>
-                            </div>
-                            <div class="price">
-                                <p>15 990 ₽</p>
-                            </div>
-
-                        </div>
-                        <div class="cardz">
-                            <div class="card-disc">
-                                <p>ö-15</p>
-                                <p>light</p>
-                            </div>
-                            <div class="price">
-                                <p>15 990 ₽</p>
-                            </div>
-
-                        </div>
-                        <div class="cardz">
-                            <div class="card-disc">
-                                <p>ö-02</p>
-                                <p>dark</p>
-                            </div>
-                            <div class="price">
-                                <p>15 990 ₽</p>
-                            </div>
-
-                        </div>
-                        <div class="cardz">
-                            <div class="card-disc">
-                                <p>ö-18</p>
-                                <p>light</p>
-                            </div>
-                            <div class="price">
-                                <p>15 990 ₽</p>
-                            </div>
-
-                        </div>
-                        <div class="cardz">
-                            <div class="card-disc">
-                                <p>ö-04</p>
-                                <p>dark</p>
-                            </div>
-                            <div class="price">
-                                <p>15 990 ₽</p>
-                            </div>
+                        <div class="sell">
+                            <p class="p-disc-g">Цвет:</p>
+                            <p class="p-disc-b">LIGHT</p>
                         </div>
                     </div>
+                    <div class="line-space"></div>
+                    <div class="price-info">
+                        <h3>12 990 ₽</h3>
+                        <p class="dollar-price">~119,18 $</p>
+                    </div>
+                    <p>Этот светлый деревянный стул, вдохновленный швейцарской архитектурой и скандинавским минимализмом.</p>
                 </div>
+                <button class="btn_add_basket">
+                    <h3>В корзину</h3>
+                    <img src="icons/plus-solid.svg">
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
 
-            </section>
-    </main>
-
-        <button id="openModalBtn" class="btn">nvn</button>
-        <div id="myModal" class="modal">
-            <div class="modal-content">
-            <div class="model-name">
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <div class="model-name">
             <span class="close"><img src="icons/Collection Arrow-Gray.svg"></span>
             <h1>Ӧ-02</h1>
-            </div>
-                <div class="main_modal_block">
-                    <div class="left_modal_block">
-                        <div class="prew_cardz">
-                        <img src="media/Product Card.png" height="440px" width="440px">
-                        </div>
-                </div>
-                 <div class="right_modal_block">
-                    <div class="info_cardz">
-                        <div class="info">
-                            <div class="model">
-                                <p class="p-disc-g">Модель:</p>
-                                <p class="p-disc-b">ö-02</p>
-                            </div>
-                            <div class="sell">
-                                <p class="p-disc-g">Цвет:</p>
-                                <p class="p-disc-b">LIGHT</p>
-                            </div>
-                        </div>
-                        <div class="line-space"></div>
-                        
-                        <div class="price-info">
-                            <h3>15 990 ₽</h3>
-                            <p class="dollar-price">~147,18 $</p>
-                        </div>
-                        
-                        <p>Этот светлый деревянный стул, вдохновленный швейцарской архитектурой и скандинавским минимализмом.</p>
-                    </div>
-                    <button class="btn_add_basket">
-                        <h3>В корзину</h3>
-                        <img src="icons/plus-solid.svg">
-                    </button>
-                 </div>
-                </div>
-             </div>
         </div>
+        <div class="main_modal_block">
+            <div class="left_modal_block">
+                <div class="prew_cardz">
+                    <img src="media/Product Card-1.png" height="440px" width="440px">
+                </div>
+            </div>
+            <div class="right_modal_block">
+                <div class="info_cardz">
+                    <div class="info">
+                        <div class="model">
+                            <p class="p-disc-g">Модель:</p>
+                            <p class="p-disc-b">ö-02</p>
+                        </div>
+                        <div class="sell">
+                            <p class="p-disc-g">Цвет:</p>
+                            <p class="p-disc-b">DARK</p>
+                        </div>
+                    </div>
+                    <div class="line-space"></div>
+                    <div class="price-info">
+                        <h3>15 990 ₽</h3>
+                        <p class="dollar-price">~147,18 $</p>
+                    </div>
+                    <p>Этот темный деревянный стул, вдохновленный швейцарской архитектурой и скандинавским минимализмом.</p>
+                </div>
+                <button class="btn_add_basket">
+                    <h3>В корзину</h3>
+                    <img src="icons/plus-solid.svg">
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
 
-<script src="script.js"></script> 
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <div class="model-name">
+            <span class="close"><img src="icons/Collection Arrow-Gray.svg"></span>
+            <h1>Ӧ-18</h1>
+        </div>
+        <div class="main_modal_block">
+            <div class="left_modal_block">
+                <div class="prew_cardz">
+                    <img src="media/Product Card-2.png" height="440px" width="440px">
+                </div>
+            </div>
+            <div class="right_modal_block">
+                <div class="info_cardz">
+                    <div class="info">
+                        <div class="model">
+                            <p class="p-disc-g">Модель:</p>
+                            <p class="p-disc-b">ö-18</p>
+                        </div>
+                        <div class="sell">
+                            <p class="p-disc-g">Цвет:</p>
+                            <p class="p-disc-b">LIGHT</p>
+                        </div>
+                    </div>
+                    <div class="line-space"></div>
+                    <div class="price-info">
+                        <h3>13 490 ₽</h3>
+                        <p class="dollar-price">~123,18 $</p>
+                    </div>
+                    <p>Этот светлый деревянный стул, вдохновленный швейцарской архитектурой и скандинавским минимализмом.</p>
+                </div>
+                <button class="btn_add_basket">
+                    <h3>В корзину</h3>
+                    <img src="icons/plus-solid.svg">
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal4" class="modal">
+    <div class="modal-content">
+        <div class="model-name">
+            <span class="close"><img src="icons/Collection Arrow-Gray.svg"></span>
+            <h1>Ӧ-04</h1>
+        </div>
+        <div class="main_modal_block">
+            <div class="left_modal_block">
+                <div class="prew_cardz">
+                    <img src="media/Product Card-3.png" height="440px" width="440px">
+                </div>
+            </div>
+            <div class="right_modal_block">
+                <div class="info_cardz">
+                    <div class="info">
+                        <div class="model">
+                            <p class="p-disc-g">Модель:</p>
+                            <p class="p-disc-b">ö-04</p>
+                        </div>
+                        <div class="sell">
+                            <p class="p-disc-g">Цвет:</p>
+                            <p class="p-disc-b">DARK</p>
+                        </div>
+                    </div>
+                    <div class="line-space"></div>
+                    <div class="price-info">
+                        <h3>15 990 ₽</h3>
+                        <p class="dollar-price">~147,18 $</p>
+                    </div>
+                    <p>Этот темный деревянный стул, вдохновленный швейцарской архитектурой и скандинавским минимализмом.</p>
+                </div>
+                <button class="btn_add_basket">
+                    <h3>В корзину</h3>
+                    <img src="icons/plus-solid.svg">
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal5" class="modal">
+    <div class="modal-content">
+        <div class="model-name">
+            <span class="close"><img src="icons/Collection Arrow-Gray.svg"></span>
+            <h1>Ӧ-15</h1>
+        </div>
+        <div class="main_modal_block">
+            <div class="left_modal_block">
+                <div class="prew_cardz">
+                    <img src="media/Product Card-2.png" height="440px" width="440px">
+                </div>
+            </div>
+            <div class="right_modal_block">
+                <div class="info_cardz">
+                    <div class="info">
+                        <div class="model">
+                            <p class="p-disc-g">Модель:</p>
+                            <p class="p-disc-b">ö-15</p>
+                        </div>
+                        <div class="sell">
+                            <p class="p-disc-g">Цвет:</p>
+                            <p class="p-disc-b">LIGHT</p>
+                        </div>
+                    </div>
+                    <div class="line-space"></div>
+                    <div class="price-info">
+                        <h3>15 990 ₽</h3>
+                        <p class="dollar-price">~147,18 $</p>
+                    </div>
+                    <p>Этот светлый деревянный стул, вдохновленный швейцарской архитектурой и скандинавским минимализмом.</p>
+                </div>
+                <button class="btn_add_basket">
+                    <h3>В корзину</h3>
+                    <img src="icons/plus-solid.svg">
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal6" class="modal">
+    <div class="modal-content">
+        <div class="model-name">
+            <span class="close"><img src="icons/Collection Arrow-Gray.svg"></span>
+            <h1>Ӧ-15</h1>
+        </div>
+        <div class="main_modal_block">
+            <div class="left_modal_block">
+                <div class="prew_cardz">
+                    <img src="media/Product Card-3.png" height="440px" width="440px">
+                </div>
+            </div>
+            <div class="right_modal_block">
+                <div class="info_cardz">
+                    <div class="info">
+                        <div class="model">
+                            <p class="p-disc-g">Модель:</p>
+                            <p class="p-disc-b">ö-15</p>
+                        </div>
+                        <div class="sell">
+                            <p class="p-disc-g">Цвет:</p>
+                            <p class="p-disc-b">LIGHT</p>
+                        </div>
+                    </div>
+                    <div class="line-space"></div>
+                    <div class="price-info">
+                        <h3>15 990 ₽</h3>
+                        <p class="dollar-price">~147,18 $</p>
+                    </div>
+                    <p>Этот светлый деревянный стул, вдохновленный швейцарской архитектурой и скандинавским минимализмом.</p>
+                </div>
+                <button class="btn_add_basket">
+                    <h3>В корзину</h3>
+                    <img src="icons/plus-solid.svg">
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal7" class="modal">
+    <div class="modal-content">
+        <div class="model-name">
+            <span class="close"><img src="icons/Collection Arrow-Gray.svg"></span>
+            <h1>Ӧ-15</h1>
+        </div>
+        <div class="main_modal_block">
+            <div class="left_modal_block">
+                <div class="prew_cardz">
+                    <img src="media/Product Card.png" height="440px" width="440px">
+                </div>
+            </div>
+            <div class="right_modal_block">
+                <div class="info_cardz">
+                    <div class="info">
+                        <div class="model">
+                            <p class="p-disc-g">Модель:</p>
+                            <p class="p-disc-b">ö-15</p>
+                        </div>
+                        <div class="sell">
+                            <p class="p-disc-g">Цвет:</p>
+                            <p class="p-disc-b">LIGHT</p>
+                        </div>
+                    </div>
+                    <div class="line-space"></div>
+                    <div class="price-info">
+                        <h3>15 990 ₽</h3>
+                        <p class="dollar-price">~147,18 $</p>
+                    </div>
+                    <p>Этот светлый деревянный стул, вдохновленный швейцарской архитектурой и скандинавским минимализмом.</p>
+                </div>
+                <button class="btn_add_basket">
+                    <h3>В корзину</h3>
+                    <img src="icons/plus-solid.svg">
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal8" class="modal">
+    <div class="modal-content">
+        <div class="model-name">
+            <span class="close"><img src="icons/Collection Arrow-Gray.svg"></span>
+            <h1>Ӧ-02</h1>
+        </div>
+        <div class="main_modal_block">
+            <div class="left_modal_block">
+                <div class="prew_cardz">
+                    <img src="media/Product Card-1.png" height="440px" width="440px">
+                </div>
+            </div>
+            <div class="right_modal_block">
+                <div class="info_cardz">
+                    <div class="info">
+                        <div class="model">
+                            <p class="p-disc-g">Модель:</p>
+                            <p class="p-disc-b">ö-02</p>
+                        </div>
+                        <div class="sell">
+                            <p class="p-disc-g">Цвет:</p>
+                            <p class="p-disc-b">DARK</p>
+                        </div>
+                    </div>
+                    <div class="line-space"></div>
+                    <div class="price-info">
+                        <h3>15 990 ₽</h3>
+                        <p class="dollar-price">~147,18 $</p>
+                    </div>
+                    <p>Этот темный деревянный стул, вдохновленный швейцарской архитектурой и скандинавским минимализмом.</p>
+                </div>
+                <button class="btn_add_basket">
+                    <h3>В корзину</h3>
+                    <img src="icons/plus-solid.svg">
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal9" class="modal">
+    <div class="modal-content">
+        <div class="model-name">
+            <span class="close"><img src="icons/Collection Arrow-Gray.svg"></span>
+            <h1>Ӧ-18</h1>
+        </div>
+        <div class="main_modal_block">
+            <div class="left_modal_block">
+                <div class="prew_cardz">
+                    <img src="media/Product Card-2.png" height="440px" width="440px">
+                </div>
+            </div>
+            <div class="right_modal_block">
+                <div class="info_cardz">
+                    <div class="info">
+                        <div class="model">
+                            <p class="p-disc-g">Модель:</p>
+                            <p class="p-disc-b">ö-18</p>
+                        </div>
+                        <div class="sell">
+                            <p class="p-disc-g">Цвет:</p>
+                            <p class="p-disc-b">LIGHT</p>
+                        </div>
+                    </div>
+                    <div class="line-space"></div>
+                    <div class="price-info">
+                        <h3>15 990 ₽</h3>
+                        <p class="dollar-price">~147,18 $</p>
+                    </div>
+                    <p>Этот светлый деревянный стул, вдохновленный швейцарской архитектурой и скандинавским минимализмом.</p>
+                </div>
+                <button class="btn_add_basket">
+                    <h3>В корзину</h3>
+                    <img src="icons/plus-solid.svg">
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal10" class="modal">
+    <div class="modal-content">
+        <div class="model-name">
+            <span class="close"><img src="icons/Collection Arrow-Gray.svg"></span>
+            <h1>Ӧ-04</h1>
+        </div>
+        <div class="main_modal_block">
+            <div class="left_modal_block">
+                <div class="prew_cardz">
+                    <img src="media/Product Card-3.png" height="440px" width="440px">
+                </div>
+            </div>
+            <div class="right_modal_block">
+                <div class="info_cardz">
+                    <div class="info">
+                        <div class="model">
+                            <p class="p-disc-g">Модель:</p>
+                            <p class="p-disc-b">ö-04</p>
+                        </div>
+                        <div class="sell">
+                            <p class="p-disc-g">Цвет:</p>
+                            <p class="p-disc-b">DARK</p>
+                        </div>
+                    </div>
+                    <div class="line-space"></div>
+                    <div class="price-info">
+                        <h3>15 990 ₽</h3>
+                        <p class="dollar-price">~147,18 $</p>
+                    </div>
+                    <p>Этот темный деревянный стул, вдохновленный швейцарской архитектурой и скандинавским минимализмом.</p>
+                </div>
+                <button class="btn_add_basket">
+                    <h3>В корзину</h3>
+                    <img src="icons/plus-solid.svg">
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+    </main>
 
     <footer>
                 <div class="footer-content">
                     <img src="icons/bigLogo.svg">
-                    <p>Concept by <a href="#">Михаил</a>, <a href="#">Андрей</a>, <a href="#">Вячеслав</a></p>
+                    <p><a href="https://www.instagram.com/overdosekid">Михаил</a> (Designer, Developer)<br><a href="#">Андрей</a> (Developer)<br>Вячеслав (Prosto respect)</p>
                 </div>
             </footer>
-            
-<script src="script.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
-
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </body>
 </html>

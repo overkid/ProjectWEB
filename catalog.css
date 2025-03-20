@@ -128,7 +128,8 @@
 }
 
 .zzz {
-    margin-left: 270px;
+    max-width: 1400px;
+    margin: 10px auto;
     font-family: var( --font-family);
     font-weight: 1400;
     font-size: 139px;

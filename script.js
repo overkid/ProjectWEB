@@ -182,36 +182,44 @@ burger.addEventListener("click", () => {
 
 
 
-// Получаем элементы DOM
-const modal = document.getElementById("myModal");
-const btn = document.getElementById("openModalBtn");
-const span = document.getElementsByClassName("close")[0];
+document.addEventListener("DOMContentLoaded", () => {
+    // Получаем все карточки товаров
+    const cards = document.querySelectorAll(".cardz");
+    const modals = document.querySelectorAll(".modal");
+    const closeBtns = document.querySelectorAll(".close");
 
-// Открываем модальное окно при клике на кнопку
-btn.onclick = function() {
-    modal.style.display = "block";
-    setTimeout(() => {
-        modal.classList.add("open"); // Добавляем класс для анимации
-    }, 10); // Небольшая задержка для активации анимации
-}
+    // Функция для открытия модального окна
+    cards.forEach(card => {
+        card.addEventListener("click", () => {
+            const modalId = card.getAttribute("data-modal");
+            const modal = document.getElementById(modalId);
+            modal.style.display = "block";
+            setTimeout(() => {
+                modal.classList.add("open");
+            }, 10);
+        });
+    });
 
-// Закрываем модальное окно при клике на крестик
-span.onclick = function() {
-    modal.classList.remove("open"); // Убираем класс для анимации
-    setTimeout(() => {
-        modal.style.display = "none"; // Скрываем модальное окно после завершения анимации
-    }, 300); // Задержка должна соответствовать длительности анимации
-}
+    // Функция для закрытия модального окна
+    closeBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+            const modal = btn.closest(".modal");
+            modal.classList.remove("open");
+            setTimeout(() => {
+                modal.style.display = "none";
+            }, 300);
+        });
+    });
 
-// Закрываем модальное окно при клике вне его области
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.classList.remove("open"); // Убираем класс для анимации
-        setTimeout(() => {
-            modal.style.display = "none"; // Скрываем модальное окно после завершения анимации
-        }, 300); // Задержка должна соответствовать длительности анимации
-    }
-}
-
-
-
+    // Закрытие модального окна при клике вне его области
+    window.addEventListener("click", (event) => {
+        modals.forEach(modal => {
+            if (event.target == modal) {
+                modal.classList.remove("open");
+                setTimeout(() => {
+                    modal.style.display = "none";
+                }, 300);
+            }
+        });
+    });
+});
