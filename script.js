@@ -144,18 +144,19 @@ burger.addEventListener("click", () => {
     });
 
     // Автоматический зум для больших экранов
-    function adjustZoom() {
-        if (window.innerWidth > 768) {
-            const baseWidth = 1920;
-            const screenWidth = window.innerWidth;
-            const zoomLevel = screenWidth / baseWidth;
-            document.body.style.zoom = zoomLevel;
-        } else {
-            document.body.style.zoom = "";
-        }
+function adjustZoom() {
+    let baseWidth = window.innerWidth <= 1440 ? 1600 : 1920;
+    if (window.innerWidth > 768) {
+        const screenWidth = window.innerWidth;
+        const zoomLevel = screenWidth / baseWidth;
+        document.body.style.zoom = zoomLevel;
+    } else {
+        document.body.style.zoom = "";
     }
-    window.addEventListener("resize", adjustZoom);
-    adjustZoom();
+}
+window.addEventListener("resize", adjustZoom);
+adjustZoom();
+
 
     // Ховер-анимация логотипа (смена изображения)
     const logos = ["icons/Logo2.svg", "icons/Logo3.svg"];
