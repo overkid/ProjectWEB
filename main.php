@@ -39,7 +39,7 @@
     <section class="ctlg">
         <div class="container-ctlg">
             <div class="zzz">
-                <p>Каталог.</p>
+                <h1>Каталог.</h1>
             </div>
             <div class="cards-ctlg">
     <div class="cardz" data-modal="modal1">

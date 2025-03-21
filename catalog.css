@@ -93,15 +93,16 @@
 }
 
 .cards-ctlg {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 320px);
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     max-width: 1400px;
-    justify-content: center;
+    justify-content: left;
     justify-items: center;
-    column-gap: 30px;
-    row-gap: 40px;
+    gap: 20px;
     margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .price {
@@ -137,11 +138,9 @@
     color: var(--black);
 }
 
-.zzz p {
-    font-family: var( --font-family);
-    font-weight: 1400;
-    font-size: 48px;
-    color: var(--black);
+.zzz h1 {
+    padding: 0px 20px;
+    margin-bottom: 40px;
 }
 
 button {
