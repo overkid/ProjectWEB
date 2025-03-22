@@ -148,7 +148,7 @@ span {
     position: sticky;
     flex-shrink: 0;
 
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
 }
 
 .goods {
@@ -167,27 +167,15 @@ span {
     display: none;
 }
 
-.link {
-    position: sticky;
-    color: var(--black);
-    cursor: pointer;
-    line-height: 1;
+a.link {
+    color: var(--gray);
     text-decoration: none;
+    transition: 200ms;
 }
 
-.link::after {
-    display: block;
-    position: absolute;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--black);
-    content: "";
-    transition: width 200ms ease-out;
-}
-
-.link:hover::after, .link:focus::after {
-    width: 100%;
+a.link:hover {
+    color: var(--black);
+    transition: 200ms;
 }
 
 .hero {
