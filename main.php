@@ -17,11 +17,11 @@
         </div>
         <div class="hud">
             <a href="index.html" class="link">Главная</a>
-            <a href="main.php" class="link">Каталог</a>
+            <a href="main.php" class="link" style="color:var(--black)">Каталог</a>
             <a href="contacts.php" class="link">Контакты</a>
          </div>
          <div class="basket">
-            <a href="basket.html" class="link link-basket">Корзина (<span class="goods">0</span>)</a>
+            <a href="basket.html" class="link link-basket" style="color:var(--black)">Корзина (<span class="goods">0</span>)</a>
          </div>
          <div class="burger">
             <img src="icons/menu-closed.svg">
@@ -39,7 +39,7 @@
     <section class="ctlg">
         <div class="container-ctlg">
             <div class="zzz">
-                <p>Каталог.</p>
+                <h1>Каталог.</h1>
             </div>
             <div class="cards-ctlg">
     <div class="cardz" data-modal="modal1">
@@ -48,7 +48,7 @@
             <p>light</p>
         </div>
         <div class="price">
-            <p>12 990 ₽</p>
+            <h3>12 990 ₽</h3>
         </div>
     </div>
 
@@ -58,7 +58,7 @@
             <p>dark</p>
         </div>
         <div class="price">
-            <p>15 990 ₽</p>
+            <h3>15 990 ₽</h3>
         </div>
     </div>
 
@@ -68,7 +68,7 @@
             <p>light</p>
         </div>
         <div class="price">
-            <p>13 490 ₽</p>
+            <h3>13 490 ₽</h3>
         </div>
     </div>
 
@@ -78,7 +78,7 @@
             <p>dark</p>
         </div>
         <div class="price">
-            <p>15 990 ₽</p>
+            <h3>15 990 ₽</h3>
         </div>
     </div>
 
@@ -88,7 +88,7 @@
             <p>light</p>
         </div>
         <div class="price">
-            <p>15 990 ₽</p>
+            <h3>15 990 ₽</h3>
         </div>
     </div>
 
@@ -98,7 +98,7 @@
             <p>light</p>
         </div>
         <div class="price">
-            <p>15 990 ₽</p>
+            <h3>15 990 ₽</h3>
         </div>
     </div>
 
@@ -108,7 +108,7 @@
             <p>light</p>
         </div>
         <div class="price">
-            <p>15 990 ₽</p>
+            <h3>15 990 ₽</h3>
         </div>
     </div>
 
@@ -118,7 +118,7 @@
             <p>dark</p>
         </div>
         <div class="price">
-            <p>15 990 ₽</p>
+            <h3>15 990 ₽</h3>
         </div>
     </div>
 
@@ -128,7 +128,7 @@
             <p>light</p>
         </div>
         <div class="price">
-            <p>15 990 ₽</p>
+            <h3>15 990 ₽</h3>
         </div>
     </div>
 
@@ -138,9 +138,24 @@
             <p>dark</p>
         </div>
         <div class="price">
-            <p>15 990 ₽</p>
+            <h3>15 990 ₽</h3>
         </div>
     </div>
+
+    <div class="mailing">
+        <div class="mailing-content">
+            <h3>Будь в курсе<br><span>появления новинок.</span></h3>
+            <form class="mail-input">
+                <div class="mail-img-input">
+                    <img src="icons/mail.svg">
+                    <input class="mail" type="email" placeholder="youremail@mail.com">
+                </div>
+
+                <button type="submit"><img src="icons/Collection Arrow.svg"></button>
+            </form>
+        </div>
+    </div>
+
 </div>
     </section>
 
