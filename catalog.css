@@ -40,6 +40,7 @@ main {
     background-image: url(media/Product\ Card-3.png);
 }
 
+
 .p-disc-g {
     font-weight: 600;
     font-size: 14px;
@@ -131,16 +132,16 @@ main {
 
 .zzz {
     max-width: 1400px;
-    margin: 10px auto;
-    font-family: var( --font-family);
-    font-weight: 1400;
-    font-size: 139px;
-    color: var(--black);
+    margin: 0 auto;
+    padding: 0px 20px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
 }
 
 .zzz h1 {
-    padding: 0px 20px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 
 button {

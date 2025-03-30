@@ -14,13 +14,13 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
+    border-bottom: 2px solid var(--light-gray);
+    padding-bottom: 20px;
 }
 
 .basket-item img {
-    width: 100px;
-    height: 100px;
+    width: 160px;
+    height: 160px;
     object-fit: cover;
 }
 
@@ -29,19 +29,53 @@
 }
 
 .remove-item {
-    background: #ff4d4d;
-    color: white;
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--gray);
+    background: none;
     border: none;
     padding: 5px 10px;
     cursor: pointer;
 }
 
 .remove-item:hover {
-    background: #ff1a1a;
+    color: var(--black);
 }
 
 .total {
     text-align: right;
-    font-size: 1.2em;
+    font-size: 20px;
+}
+
+button.clear-cart {
+    outline: 0;
+    border: 2px solid var(--light-gray);
+    background-color: var(--white);
+    font-family: var(--font-family);
+    color: var(--black);
+    font-size: 20px;
+    padding: 16px 24px;
+    cursor: pointer;
+}
+
+.basket-control {
     margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+a.checkout-button {
+    background-color: var(--black);
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 122%;
+    color: var(--white);
+    text-decoration: none;
+
+    padding: 24px 40px;
 }

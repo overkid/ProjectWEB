@@ -284,7 +284,7 @@ document.addEventListener("DOMContentLoaded", () => {
             itemElement.innerHTML = `
                 <img src="${item.image}" alt="${item.name}" width="100">
                 <div class="item-info">
-                    <p>${item.name}</p>
+                    <p style="color:var(--black); font-weight:600">${item.name}</p>
                     <p>${item.price} ₽</p>
                 </div>
                 <button class="remove-item" data-index="${index}">Удалить</button>

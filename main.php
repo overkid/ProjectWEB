@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="catalog.css">
 </head>
 <body>
+<div id="preloader">
+        <video src="media/loading.mp4" autoplay loop muted playsinline></video>
+    </div>
 <div class="nav">
         <div class="logo">
             <a href="index.html"><img src="icons/Logo.svg"></a>
@@ -39,7 +42,8 @@
     <section class="ctlg">
         <div class="container-ctlg">
             <div class="zzz">
-                <h1>Каталог.</h1>
+                <h1>Каталог</h1>
+                <p class="p-disc-g">Товаров: 10</p>
             </div>
             <div class="cards-ctlg">
     <div class="cardz" data-modal="modal1">

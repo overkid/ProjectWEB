@@ -86,6 +86,7 @@ h3 {
 }
 
 p {
+    font-family: var(--font-family);
     font-size: 20px;
     color: var(--gray);
     grid-column: 7 / span 6;
