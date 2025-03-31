@@ -149,10 +149,13 @@
     <div class="mailing">
         <div class="mailing-content">
             <h3>Будь в курсе<br><span>появления новинок.</span></h3>
-            <form class="mail-input">
+            <div id="message" style="margin-top: 10px; color: green;">
+
+            </div>
+            <form class="mail-input" id="subscribe-form">
                 <div class="mail-img-input">
                     <img src="icons/mail.svg">
-                    <input class="mail" type="email" placeholder="youremail@mail.com">
+                    <input class="mail" type="email" name="email" placeholder="youremail@mail.com">
                 </div>
 
                 <button type="submit"><img src="icons/Collection Arrow.svg"></button>

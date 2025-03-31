@@ -375,3 +375,10 @@ input::placeholder {
     flex-direction: column;
     gap: auto;
 }
+
+#message {
+    transition: opacity 0.3s;
+}
+#message.show {
+    opacity: 1;
+}

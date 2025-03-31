@@ -327,3 +327,54 @@ document.addEventListener("DOMContentLoaded", () => {
     // Инициализация корзины при загрузке страницы
     displayCart();
 });
+
+
+
+document.getElementById('subscribe-form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Отменяем стандартную отправку формы
+    
+    const formData = new FormData(this); // Собираем данные формы
+    const messageDiv = document.getElementById('message');
+    
+    // Отправляем запрос на сервер
+    fetch('subscribe.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+        messageDiv.textContent = data; // Показываем ответ сервера
+        messageDiv.style.color = data.includes('Ошибка') ? 'red' : 'green';
+        
+        // Очищаем поле ввода после успешной отправки
+        if (!data.includes('Ошибка')) {
+            this.reset();
+        }
+    })
+    .catch(error => {
+        messageDiv.textContent = 'Произошла ошибка при отправке.';
+        messageDiv.style.color = 'red';
+    });
+});
+
+
+
+// В обработчике fetch:
+messageDiv.textContent = data;
+messageDiv.style.color = data.includes('Ошибка') ? 'red' : 'green';
+messageDiv.classList.add('show');
+
+// Через 5 секунд скрываем сообщение
+setTimeout(() => {
+    messageDiv.classList.remove('show');
+}, 5000);
+
+
+const emailInput = document.querySelector('input[name="email"]');
+emailInput.addEventListener('input', function() {
+    if (!this.checkValidity()) {
+        this.setCustomValidity('Введите корректный email (например, user@example.com)');
+    } else {
+        this.setCustomValidity('');
+    }
+});
