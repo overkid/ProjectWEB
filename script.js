@@ -227,8 +227,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-// Корзина
-
+// Корзина - добавление товаров
 document.addEventListener("DOMContentLoaded", () => {
     const addToCartButtons = document.querySelectorAll(".btn_add_basket");
     const cartCount = document.querySelector(".goods");
@@ -236,7 +235,12 @@ document.addEventListener("DOMContentLoaded", () => {
     // Функция для добавления товара в корзину
     addToCartButtons.forEach(button => {
         button.addEventListener("click", () => {
-            const product = JSON.parse(button.getAttribute("data-product"));
+            const productData = button.getAttribute("data-product");
+            const product = JSON.parse(productData);
+            
+            // Преобразуем цену в число
+            product.price = parseFloat(product.price);
+            
             addToCart(product);
             updateCartCount();
         });
@@ -262,13 +266,19 @@ document.addEventListener("DOMContentLoaded", () => {
     updateCartCount();
 });
 
-
-// Корзина счетчик 
-
+// Корзина - отображение и подсчет суммы
 document.addEventListener("DOMContentLoaded", () => {
     const basketItems = document.querySelector(".basket-items");
     const totalPriceElement = document.querySelector(".total-price");
     const clearCartButton = document.querySelector(".clear-cart");
+
+    // Функция форматирования цены
+    function formatPrice(price) {
+        return new Intl.NumberFormat('ru-RU', {
+            style: 'decimal',
+            minimumFractionDigits: 0
+        }).format(price);
+    }
 
     // Функция отображения товаров в корзине
     function displayCart() {
@@ -281,48 +291,53 @@ document.addEventListener("DOMContentLoaded", () => {
             const itemElement = document.createElement("div");
             itemElement.classList.add("basket-item");
 
+            // Преобразуем цену в число, если это еще не сделано
+            const itemPrice = typeof item.price === 'number' ? item.price : parseFloat(item.price);
+            totalPrice += itemPrice;
+
             itemElement.innerHTML = `
                 <img src="${item.image}" alt="${item.name}" width="100">
                 <div class="item-info">
                     <p style="color:var(--black); font-weight:600">${item.name}</p>
-                    <p>${item.price} ₽</p>
+                    <p>${formatPrice(itemPrice)} ₽</p>
                 </div>
                 <button class="remove-item" data-index="${index}">Удалить</button>
             `;
 
             basketItems.appendChild(itemElement);
-            totalPrice += item.price;
         });
 
-        totalPriceElement.textContent = `${totalPrice} ₽`;
+        totalPriceElement.textContent = `${formatPrice(totalPrice)} ₽`;
     }
 
     // Функция удаления товара из корзины
     function removeItem(index) {
         let cart = JSON.parse(localStorage.getItem("cart")) || [];
-        cart.splice(index, 1); // Удаляем товар по индексу
+        cart.splice(index, 1);
         localStorage.setItem("cart", JSON.stringify(cart));
-        displayCart(); // Обновляем отображение корзины
-        updateCartCount(); // Обновляем счетчик в навигации
+        displayCart();
+        updateCartCount();
     }
 
     // Функция очистки корзины
     function clearCart() {
-        localStorage.removeItem("cart"); // Удаляем все товары из корзины
-        displayCart(); // Обновляем отображение корзины
-        updateCartCount(); // Обновляем счетчик в навигации
+        localStorage.removeItem("cart");
+        displayCart();
+        updateCartCount();
     }
 
     // Обработчик для кнопок удаления
     basketItems.addEventListener("click", (event) => {
         if (event.target.classList.contains("remove-item")) {
-            const index = event.target.getAttribute("data-index");
+            const index = parseInt(event.target.getAttribute("data-index"));
             removeItem(index);
         }
     });
 
     // Обработчик для кнопки очистки корзины
-    clearCartButton.addEventListener("click", clearCart);
+    if (clearCartButton) {
+        clearCartButton.addEventListener("click", clearCart);
+    }
 
     // Инициализация корзины при загрузке страницы
     displayCart();
@@ -378,3 +393,51 @@ emailInput.addEventListener('input', function() {
         this.setCustomValidity('');
     }
 });
+
+
+
+// Обработка оформления заказа
+document.querySelector('.checkout-button').addEventListener('click', function(e) {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    
+    if (cart.length === 0) {
+        e.preventDefault();
+        alert('Ваша корзина пуста!');
+        return;
+    }
+    
+    // Заполняем скрытые поля формы
+    document.getElementById('cart-items').value = JSON.stringify(cart);
+    
+    const totalPrice = parseFloat(
+        document.querySelector('.total-price').textContent
+            .replace(/\D/g, '')
+    );
+    document.getElementById('total-price').value = totalPrice;
+});
+
+// Маска для телефона
+document.getElementById('phone')?.addEventListener('input', function(e) {
+    let value = this.value.replace(/\D/g, '');
+    let formattedValue = '';
+    
+    if (value.length > 0) {
+        formattedValue = '+7 (' + value.substring(1, 4);
+    }
+    if (value.length >= 4) {
+        formattedValue += ') ' + value.substring(4, 7);
+    }
+    if (value.length >= 7) {
+        formattedValue += '-' + value.substring(7, 9);
+    }
+    if (value.length >= 9) {
+        formattedValue += '-' + value.substring(9, 11);
+    }
+    
+    this.value = formattedValue;
+});
+
+
+/////////////
+
+
